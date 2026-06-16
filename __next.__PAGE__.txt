@@ -1,7 +1,7 @@
 1:"$Sreact.fragment"
 4:I[97367,["/_next/static/chunks/05-c3ty_6dwfk.js","/_next/static/chunks/14mrh2-p_w84d.js"],"OutletBoundary"]
 5:"$Sreact.suspense"
-2:T2daa,<h1>Ofertas Promissoras - Nicho CNH 🚦</h1>
+2:T2ee8,<h1>Ofertas Promissoras - Nicho CNH 🚦</h1>
 <h2>Relatório rápido do universo CNH</h2>
 <p>Base usada: antigo julgado + delta novo julgado + delta já mapeado, deduplicando por <code>library_id</code>.</p>
 <ul>
@@ -113,16 +113,16 @@
 <p>Itens do rascunho que agora estão preservados aqui:</p>
 <ul>
 <li>Link de rastreio Autoescola Online: <code>id=1631097831312534</code>, <code>view_all_page_id=460592113978748</code>.</li>
-<li>JSON bruto do Aprova DETRAN: <code>library_id=1547305459679317</code>, destino <code>https://www.aprovadetran.com.br/</code>, copy &quot;Simulado DETRAN (2026)&quot;.</li>
+<li>JSON bruto do Aprova DETRAN: <code>library_id=1547305459679317</code>, destino <a href="https://www.aprovadetran.com.br/">https://www.aprovadetran.com.br/</a>, copy &quot;Simulado DETRAN (2026)&quot;.</li>
 <li>Link de rastreio Passa Detran BR: <code>id=1275641514014469</code>, <code>view_all_page_id=1102799386241916</code>.</li>
 <li>Link de rastreio Audrey Junior: <code>id=1565073514960792</code>, <code>view_all_page_id=439851329201886</code>.</li>
 <li>Referência externa do rascunho: <a href="https://www.youtube.com/watch?v=fsx2SBwVRAw">YouTube <code>fsx2SBwVRAw</code></a>.</li>
-<li>Simulado Detran 2026: <code>https://simuladosdetran2026.netlify.app/</code>.</li>
+<li>Simulado Detran 2026: <a href="https://simuladosdetran2026.netlify.app/">https://simuladosdetran2026.netlify.app/</a>.</li>
 <li>Link de rastreio Auto Agente: <code>view_all_page_id=206411679218416</code>.</li>
 <li>Link de rastreio Kiwify / Ana Carla Roma: <code>view_all_page_id=1046620675201557</code>.</li>
-<li>Pre-checkout AutoAgenteZap: <code>https://www.autoagentezap.com.br/pre-checkout?src=v3_aa0dea1a-35c3-451b-9c9f-0e48b5a34dec_69e568c7a40cbebddf7db9f3_510_t-12_s-1</code>.</li>
-<li>Duplicatas normalizadas do rascunho: <code>https://autoagente.com.br/vsl/</code> e <code>https://autoagente.com.br/</code>.</li>
-<li>O redirect bruto <code>l.facebook.com</code> do Aprova DETRAN foi normalizado para a URL final <code>https://www.aprovadetran.com.br/</code>; o hash de tracking não carrega informação editorial útil.</li>
+<li>Pre-checkout AutoAgenteZap: <a href="https://www.autoagentezap.com.br/pre-checkout?src=v3_aa0dea1a-35c3-451b-9c9f-0e48b5a34dec_69e568c7a40cbebddf7db9f3_510_t-12_s-1">https://www.autoagentezap.com.br/pre-checkout?src=v3_aa0dea1a-35c3-451b-9c9f-0e48b5a34dec_69e568c7a40cbebddf7db9f3_510_t-12_s-1</a>.</li>
+<li>Duplicatas normalizadas do rascunho: <a href="https://autoagente.com.br/vsl/">https://autoagente.com.br/vsl/</a> e <a href="https://autoagente.com.br/">https://autoagente.com.br/</a>.</li>
+<li>O redirect bruto <code>l.facebook.com</code> do Aprova DETRAN foi normalizado para a URL final <a href="https://www.aprovadetran.com.br/">https://www.aprovadetran.com.br/</a>; o hash de tracking não carrega informação editorial útil.</li>
 </ul>
 <hr>
 <blockquote>
@@ -130,7 +130,7 @@
 <strong>Aprofundando a escala:</strong> 
 O fato de alguns anúncios &quot;caírem no corte de IDs&quot; na captura delta significa que o robô achou apenas <em>1 criativo/ad</em> com a sua keyword. Isso não impede que o anunciante esteja rodando outros anúncios em campanhas diferentes ou sem keyword em texto! Se a promessa dessas LPs é realmente boa, a melhor próxima ação é acessar os links de &quot;Ver Anúncio&quot; acima e clicar em &quot;Ver anúncios&quot; diretamente na página do anunciante pelo navegador para ver o funil total!</p>
 </blockquote>
-<p><a href="https://cnh-de-primeira.semprenamoda.com.br/step-01-hero">https://cnh-de-primeira.semprenamoda.com.br/step-01-hero</a></p>
-0:{"rsc":["$","$1","c",{"children":[["$","main",null,{"className":"min-h-screen bg-[oklch(0.98_0.003_80)] text-[oklch(0.15_0.01_250)] p-8 sm:p-12","children":["$","div",null,{"className":"mx-auto max-w-3xl prose prose-slate  [&>h1]:text-4xl [&>h1]:font-extrabold [&>h1]:mb-6 [&>h1]:text-black [&>h2]:text-2xl [&>h2]:font-bold [&>h2]:mt-10 [&>h2]:mb-4 [&>h2]:border-b [&>h2]:pb-2 [&>h3]:text-xl [&>h3]:font-bold [&>h3]:mt-8 [&>h3]:mb-3 [&>p]:text-lg [&>p]:leading-relaxed [&>p]:mb-4 [&>ul]:list-disc [&>ul]:pl-6 [&>ul]:mb-6 [&>ul>li]:mb-2 [&>a]:text-blue-600 [&>a]:underline [&>a]:font-medium [&>blockquote]:border-l-4 [&>blockquote]:border-blue-500 [&>blockquote]:bg-blue-50 [&>blockquote]:p-4 [&>blockquote]:rounded-r-lg [&>blockquote]:my-6 [&>hr]:my-8 [&>hr]:border-[oklch(0.9_0.008_250)] [&_strong]:font-bold [&_strong]:text-black [&_code]:bg-[oklch(0.92_0.01_250)] [&_code]:px-1.5 [&_code]:py-0.5 [&_code]:rounded-md [&_code]:text-sm [&_code]:font-mono","dangerouslySetInnerHTML":{"__html":"$2"}}]}],null,"$L3"]}],"isPartial":false,"staleTime":300,"varyParams":null,"buildId":"fB6Ksm5p33wU9GZ7Iarav"}
+<h2><strong><a href="https://cnh-de-primeira.semprenamoda.com.br/step-01-hero">👉 CLIQUE AQUI PARA INICIAR O FLUXO DA CNH DE PRIMEIRA</a></strong></h2>
+0:{"rsc":["$","$1","c",{"children":[["$","main",null,{"className":"min-h-screen bg-[oklch(0.98_0.003_80)] text-[oklch(0.15_0.01_250)] p-8 sm:p-12","children":["$","div",null,{"className":"mx-auto max-w-3xl prose prose-slate  [&>h1]:text-4xl [&>h1]:font-extrabold [&>h1]:mb-6 [&>h1]:text-black [&>h2]:text-2xl [&>h2]:font-bold [&>h2]:mt-10 [&>h2]:mb-4 [&>h2]:border-b [&>h2]:pb-2 [&>h3]:text-xl [&>h3]:font-bold [&>h3]:mt-8 [&>h3]:mb-3 [&>p]:text-lg [&>p]:leading-relaxed [&>p]:mb-4 [&>ul]:list-disc [&>ul]:pl-6 [&>ul]:mb-6 [&>ul>li]:mb-2 [&>a]:text-blue-600 [&>a]:underline [&>a]:font-medium [&>blockquote]:border-l-4 [&>blockquote]:border-blue-500 [&>blockquote]:bg-blue-50 [&>blockquote]:p-4 [&>blockquote]:rounded-r-lg [&>blockquote]:my-6 [&>hr]:my-8 [&>hr]:border-[oklch(0.9_0.008_250)] [&_strong]:font-bold [&_strong]:text-black [&_code]:bg-[oklch(0.92_0.01_250)] [&_code]:px-1.5 [&_code]:py-0.5 [&_code]:rounded-md [&_code]:text-sm [&_code]:font-mono","dangerouslySetInnerHTML":{"__html":"$2"}}]}],null,"$L3"]}],"isPartial":false,"staleTime":300,"varyParams":null,"buildId":"dcfisl1m02tPt8PNkpqFA"}
 3:["$","$L4",null,{"children":["$","$5",null,{"name":"Next.MetadataOutlet","children":"$@6"}]}]
 6:null
