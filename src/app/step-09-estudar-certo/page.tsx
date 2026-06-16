@@ -72,7 +72,7 @@ export default function Step09EstudarCerto() {
           className="w-full aspect-video mb-8 relative overflow-hidden"
         >
           <Image
-            src="/opcao-03/images/caos-youtube.jpeg"
+            src="/images/caos-youtube.jpeg"
             alt="Mural caótico do YouTube"
             fill
             className="object-cover scale-[1.02]"

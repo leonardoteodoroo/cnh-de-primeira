@@ -6,7 +6,7 @@ import { TextEffect } from '@/components/ui/text-effect';
 import { Typewriter } from '@/components/ui/typewriter';
 
 const heroImages = [
-  "/opcao-03/images/especialista-hero-2.jpeg", // 3:4 Hiper realista solicitada
+  "/images/especialista-hero-2.jpeg", // 3:4 Hiper realista solicitada
 ];
 
 export default function HeroLab() {
