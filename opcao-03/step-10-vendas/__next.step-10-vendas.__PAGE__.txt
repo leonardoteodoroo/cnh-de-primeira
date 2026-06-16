@@ -1,0 +1,5 @@
+1:"$Sreact.fragment"
+2:I[36004,["/opcao-03/_next/static/chunks/2ql2158on8ysa.js","/opcao-03/_next/static/chunks/1thn948wawwj9.js"],"OutletBoundary"]
+3:"$Sreact.suspense"
+0:{"rsc":["$","$1","c",{"children":[["$","div",null,{"className":"flex flex-col items-center justify-center min-h-screen bg-white","children":[["$","h1",null,{"className":"text-3xl font-bold","children":"CNH de Primeira - Vendas"}],["$","p",null,{"className":"mt-4 text-gray-600","children":"Página em construção."}]]}],null,["$","$L2",null,{"children":["$","$3",null,{"name":"Next.MetadataOutlet","children":"$@4"}]}]]}],"isPartial":false,"staleTime":300,"varyParams":null,"buildId":"Q3h8RkwWObRHbjcRLeegz"}
+4:null
