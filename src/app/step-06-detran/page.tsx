@@ -20,7 +20,7 @@ export default function Step06Detran() {
           className="w-full aspect-video relative overflow-hidden"
         >
           <Image
-            src="/detran-profit.png"
+            src="/opcao-03/detran-profit.png"
             alt="Ilustração sobre o lucro sombrio das taxas de reteste do Detran"
             fill
             className="object-cover"

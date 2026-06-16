@@ -7,8 +7,8 @@ import { TextEffect } from '@/components/ui/text-effect';
 import { Typewriter } from '@/components/ui/typewriter';
 
 const heroImages = [
-  "/images/hero-16-9-1.jpeg",
-  "/images/hero-16-9-2.jpeg", 
+  "/opcao-03/images/hero-16-9-1.jpeg",
+  "/opcao-03/images/hero-16-9-2.jpeg", 
 ];
 
 export default function HeroLab3() {
