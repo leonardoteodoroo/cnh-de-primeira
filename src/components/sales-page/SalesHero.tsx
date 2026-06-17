@@ -10,7 +10,7 @@ export function SalesHero() {
   return (
     <section className="relative overflow-hidden bg-[oklch(0.13_0.015_85)] text-white">
       <div className="absolute inset-0">
-        <picture className="h-full w-full">
+        <picture className="absolute inset-0 block">
           <source media="(min-width: 768px)" srcSet="/images/vendas-temp/hero-desktop.jpeg" />
           <img
             src="/images/vendas-temp/hero-mobile.jpeg"
@@ -20,7 +20,7 @@ export function SalesHero() {
             className="h-full w-full object-cover object-center"
           />
         </picture>
-        <div className="absolute inset-0 bg-gradient-to-b from-black/20 via-black/50 to-black/90 md:via-black/30 md:to-black" />
+        <div className="absolute inset-0 bg-gradient-to-b from-black/40 via-black/50 to-black/80 md:via-black/30 md:to-black/90" />
       </div>
 
       <div className="relative mx-auto flex min-h-dvh max-w-6xl flex-col px-5 py-6 md:px-8">
