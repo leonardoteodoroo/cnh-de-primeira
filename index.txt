@@ -2,145 +2,30 @@
 2:I[39756,["/_next/static/chunks/05-c3ty_6dwfk.js","/_next/static/chunks/14mrh2-p_w84d.js"],"default"]
 3:I[16868,["/_next/static/chunks/05-c3ty_6dwfk.js","/_next/static/chunks/14mrh2-p_w84d.js","/_next/static/chunks/186aes2uq6bw_.js","/_next/static/chunks/0l42l9m5bwqd7.js"],"default"]
 4:I[37457,["/_next/static/chunks/05-c3ty_6dwfk.js","/_next/static/chunks/14mrh2-p_w84d.js"],"default"]
-6:I[97367,["/_next/static/chunks/05-c3ty_6dwfk.js","/_next/static/chunks/14mrh2-p_w84d.js"],"OutletBoundary"]
-7:"$Sreact.suspense"
-9:I[97367,["/_next/static/chunks/05-c3ty_6dwfk.js","/_next/static/chunks/14mrh2-p_w84d.js"],"ViewportBoundary"]
-b:I[97367,["/_next/static/chunks/05-c3ty_6dwfk.js","/_next/static/chunks/14mrh2-p_w84d.js"],"MetadataBoundary"]
-d:I[68027,["/_next/static/chunks/05-c3ty_6dwfk.js","/_next/static/chunks/14mrh2-p_w84d.js"],"default",1]
-:HL["/_next/static/chunks/1hv81fw71-4p7.css","style"]
-0:{"P":null,"c":["",""],"q":"","i":false,"f":[[["",{"children":["__PAGE__",{}]},"$undefined","$undefined",16],[["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/chunks/1hv81fw71-4p7.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}],["$","script","script-0",{"src":"/_next/static/chunks/05-c3ty_6dwfk.js","async":true,"nonce":"$undefined"}],["$","script","script-1",{"src":"/_next/static/chunks/14mrh2-p_w84d.js","async":true,"nonce":"$undefined"}]],["$","html",null,{"lang":"pt-BR","className":"h-full overflow-x-hidden antialiased","children":["$","body",null,{"className":"min-h-full flex flex-col overflow-x-hidden","children":["$","$L2",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L3",null,{"children":["$","$L4",null,{}]}],"templateStyles":[],"templateScripts":[["$","script","script-0",{"src":"/_next/static/chunks/186aes2uq6bw_.js","async":true}],["$","script","script-1",{"src":"/_next/static/chunks/0l42l9m5bwqd7.js","async":true}]],"notFound":[[["$","title",null,{"children":"404: This page could not be found."}],["$","div",null,{"style":{"fontFamily":"system-ui,\"Segoe UI\",Roboto,Helvetica,Arial,sans-serif,\"Apple Color Emoji\",\"Segoe UI Emoji\"","height":"100vh","textAlign":"center","display":"flex","flexDirection":"column","alignItems":"center","justifyContent":"center"},"children":["$","div",null,{"children":[["$","style",null,{"dangerouslySetInnerHTML":{"__html":"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}"}}],["$","h1",null,{"className":"next-error-h1","style":{"display":"inline-block","margin":"0 20px 0 0","padding":"0 23px 0 0","fontSize":24,"fontWeight":500,"verticalAlign":"top","lineHeight":"49px"},"children":404}],["$","div",null,{"style":{"display":"inline-block"},"children":["$","h2",null,{"style":{"fontSize":14,"fontWeight":400,"lineHeight":"49px","margin":0},"children":"This page could not be found."}]}]]}]}]],[]],"forbidden":"$undefined","unauthorized":"$undefined"}]}]}]]}],{"children":[["$","$1","c",{"children":["$L5",null,["$","$L6",null,{"children":["$","$7",null,{"name":"Next.MetadataOutlet","children":"$@8"}]}]]}],{},null,false,null]},null,false,null],["$","$1","h",{"children":[null,["$","$L9",null,{"children":"$La"}],["$","div",null,{"hidden":true,"children":["$","$Lb",null,{"children":["$","$7",null,{"name":"Next.Metadata","children":"$Lc"}]}]}],null]}],false]],"m":"$undefined","G":["$d",[["$","link","0",{"rel":"stylesheet","href":"/_next/static/chunks/1hv81fw71-4p7.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}]]],"S":true,"h":null,"s":"$undefined","l":"$undefined","p":"$undefined","d":"$undefined","b":"dcfisl1m02tPt8PNkpqFA"}
-e:T2ee8,<h1>Ofertas Promissoras - Nicho CNH 🚦</h1>
-<h2>Relatório rápido do universo CNH</h2>
-<p>Base usada: antigo julgado + delta novo julgado + delta já mapeado, deduplicando por <code>library_id</code>.</p>
-<ul>
-<li><strong>Total analisado:</strong> 396 ads únicos.</li>
-<li><strong>Instagram:</strong> 109 ads (27,53%).</li>
-<li><strong>Zap direto:</strong> 43 ads (10,86%) — 40 <code>api.whatsapp.com</code>, 2 <code>wa.me</code>, 1 <code>chat.whatsapp.com</code>.</li>
-<li><strong>Quiz / simulado:</strong> 78 ads (19,70%).</li>
-<li><strong>Site externo / outros:</strong> 131 ads (33,08%).</li>
-<li><strong>Facebook / fb.me:</strong> 32 ads (8,08%).</li>
-<li><strong>Link hub:</strong> 2 ads (0,51%).</li>
-<li><strong>Marketplace:</strong> 1 ad (0,25%).</li>
-</ul>
-<p>Resumo prático: <strong>Instagram + Zap = 152 ads (38,38%)</strong>. Os demais destinos somam <strong>244 ads (61,62%)</strong>.</p>
-<p>Aqui estão os potenciais que se destacaram na triagem para aprofundamento:</p>
-<h3>1. Passar de Primeira (Vercel)</h3>
-<ul>
-<li><strong>🔗 Site / LP:</strong> <a href="https://passar-de-primeira.vercel.app/">passar-de-primeira.vercel.app</a></li>
-<li><strong>📸 Anúncio / Biblioteca:</strong> <a href="https://www.facebook.com/ads/library/?id=1997940504443066">Ver Anúncio (ID: 1997940504443066)</a></li>
-<li><strong>🔑 Keyword de origem:</strong> <code>prova teórica detran</code></li>
-<li><strong>⏳ Idade / Maturidade:</strong> 24 dias rodando</li>
-<li><strong>🎯 Retido pelo Filtro por:</strong> CORTE_IDS (Apenas 1 Library ID detectado na captura; baixa escala horizontal visível).</li>
-</ul>
-<h3>2. Simulado Teórico (Lovable App)</h3>
-<ul>
-<li><strong>🔗 Site / LP:</strong> <a href="https://simuladoteorico.lovable.app/">simuladoteorico.lovable.app</a></li>
-<li><strong>📸 Anúncio / Biblioteca:</strong> <a href="https://www.facebook.com/ads/library/?id=1326318675647986">Ver Anúncio (ID: 1326318675647986)</a></li>
-<li><strong>🔑 Keyword de origem:</strong> <code>prova teórica detran</code></li>
-<li><strong>⏳ Idade / Maturidade:</strong> 1 dia rodando</li>
-<li><strong>🎯 Retido pelo Filtro por:</strong> IMATURA_FUNIL (O anúncio foi recém-lançado e possui pouquíssimo tempo de veiculação validada).</li>
-</ul>
-<h3>3. Grupo Siga Educação</h3>
-<ul>
-<li><strong>🔗 Site / LP:</strong> <a href="https://gruposigaeducacao.com.br/reciclagem-cnh-especializados">gruposigaeducacao.com.br/reciclagem-cnh-especializados</a></li>
-<li><strong>📸 Anúncio / Biblioteca:</strong> <a href="https://www.facebook.com/ads/library/?id=1472305807415615">Ver Anúncio (ID: 1472305807415615)</a></li>
-<li><strong>🔑 Keyword de origem:</strong> <code>curso cnh</code></li>
-<li><strong>⏳ Idade / Maturidade:</strong> 10 dias rodando</li>
-<li><strong>🎯 Retido pelo Filtro por:</strong> CORTE_IDS (Apenas 1 Library ID na captura, rodando isoladamente).</li>
-</ul>
-<h3>4. Simulado Detran 2026</h3>
-<ul>
-<li><strong>🔗 Site / LP:</strong> <a href="https://simuladosdetran2026.netlify.app/">simuladosdetran2026.netlify.app</a></li>
-<li><strong>📸 Anúncio / Biblioteca:</strong> <a href="https://www.facebook.com/ads/library/?id=889272863572796">Ver Anúncio (ID: 889272863572796)</a></li>
-<li><strong>👤 Anunciante:</strong> Joana Pires</li>
-<li><strong>⏳ Idade / Maturidade:</strong> 11 dias rodando</li>
-<li><strong>📈 Escala Detectada:</strong> 9 Library IDs únicos (~62 anúncios simultâneos estimativos)</li>
-</ul>
-<h3>5. Auto Agente</h3>
-<ul>
-<li><strong>🔗 Site / LP:</strong> <a href="https://autoagente.com.br/vsl/">autoagente.com.br/vsl/</a></li>
-<li><strong>📸 Anúncio / Biblioteca:</strong> <a href="https://www.facebook.com/ads/library/?id=1511314250430117">Ver Anúncio (ID: 1511314250430117)</a></li>
-<li><strong>📚 Biblioteca do anunciante:</strong> <a href="https://www.facebook.com/ads/library/?active_status=all&ad_type=all&country=BR&search_type=page&view_all_page_id=206411679218416">Ver todos os anúncios</a></li>
-<li><strong>👤 Anunciante:</strong> Auto Agente</li>
-<li><strong>⏳ Idade / Maturidade:</strong> 17 dias rodando</li>
-<li><strong>📈 Escala Detectada:</strong> 4 Library IDs únicos (~15 anúncios simultâneos estimativos)</li>
-</ul>
-<h3>6. Aprova 3.0 (Instrutor Audrey Junior)</h3>
-<ul>
-<li><strong>🔗 Site / LP:</strong> <a href="https://instrutoraudreyjunior.com.br/aprova-3-0-trafego/">instrutoraudreyjunior.com.br/aprova-3-0-trafego/</a></li>
-<li><strong>📸 Anúncio / Biblioteca:</strong> <a href="https://www.facebook.com/ads/library/?id=1565073514960792">Ver Anúncio (ID: 1565073514960792)</a></li>
-<li><strong>📚 Biblioteca do anunciante:</strong> <a href="https://www.facebook.com/ads/library/?active_status=all&ad_type=all&country=BR&search_type=page&view_all_page_id=439851329201886">Ver todos os anúncios</a></li>
-<li><strong>👤 Anunciante:</strong> Instrutor Audrey Junior</li>
-<li><strong>⏳ Idade / Maturidade:</strong> 20 dias rodando</li>
-<li><strong>📈 Escala Detectada:</strong> 4 Library IDs únicos (~6 anúncios simultâneos estimativos)</li>
-</ul>
-<h3>7. Checkout Direto Kiwify (Ana Carla Roma)</h3>
-<ul>
-<li><strong>🔗 Site / LP:</strong> <a href="https://pay.kiwify.com.br/62ULbPN">pay.kiwify.com.br/62ULbPN</a></li>
-<li><strong>📸 Anúncio / Biblioteca:</strong> <a href="https://www.facebook.com/ads/library/?id=1964711290829549">Ver Anúncio (ID: 1964711290829549)</a></li>
-<li><strong>📚 Biblioteca do anunciante:</strong> <a href="https://www.facebook.com/ads/library/?active_status=all&ad_type=all&country=BR&search_type=page&view_all_page_id=1046620675201557">Ver todos os anúncios</a></li>
-<li><strong>👤 Anunciante:</strong> Ana Carla Roma</li>
-<li><strong>⏳ Idade / Maturidade:</strong> 30 dias rodando</li>
-<li><strong>📈 Escala Detectada:</strong> 2 Library IDs únicos (~8 anúncios simultâneos estimativos)</li>
-</ul>
-<h3>8. Autoescola Online / Simulados</h3>
-<ul>
-<li><strong>🔗 Site / LP principal:</strong> <a href="https://simulados.autoescolaonline.net/">simulados.autoescolaonline.net</a></li>
-<li><strong>🔗 Link capturado no rascunho:</strong> <a href="https://www.autoescolaonline.net/download-app/">autoescolaonline.net/download-app</a></li>
-<li><strong>📸 Anúncio / Biblioteca:</strong> <a href="https://www.facebook.com/ads/library/?id=1631097831312534">Ver Anúncio (ID: 1631097831312534)</a></li>
-<li><strong>📚 Biblioteca do anunciante:</strong> <a href="https://www.facebook.com/ads/library/?active_status=all&ad_type=all&country=BR&search_type=page&view_all_page_id=460592113978748">Ver todos os anúncios</a></li>
-<li><strong>👤 Anunciante:</strong> autoescolaonline.net</li>
-<li><strong>🔑 Keyword de origem:</strong> <code>prova detran</code></li>
-<li><strong>⏳ Idade / Maturidade:</strong> 44 dias médios no cluster principal; 23 dias no anúncio <code>download-app</code>.</li>
-<li><strong>📈 Escala Detectada:</strong> 32 Library IDs únicos (~299 anúncios estimativos) no cluster <code>simulados.autoescolaonline.net</code>.</li>
-<li><strong>🧩 Observação:</strong> o rascunho também preservava referência de copy para app de simulados, conteúdo para passar no DETRAN e canal LegTransito.</li>
-</ul>
-<h3>9. Passa Detran BR</h3>
-<ul>
-<li><strong>🔗 Site / LP:</strong> <a href="https://www.passadetran.com.br/">passadetran.com.br</a></li>
-<li><strong>📸 Anúncio / Biblioteca:</strong> <a href="https://www.facebook.com/ads/library/?id=1275641514014469">Ver Anúncio (ID: 1275641514014469)</a></li>
-<li><strong>📚 Biblioteca do anunciante:</strong> <a href="https://www.facebook.com/ads/library/?active_status=all&ad_type=all&country=BR&search_type=page&view_all_page_id=1102799386241916">Ver todos os anúncios</a></li>
-<li><strong>👤 Anunciante:</strong> Passa Detran BR</li>
-<li><strong>🔑 Keywords de origem:</strong> <code>prova detran</code>, <code>prova teórica detran</code>, <code>cnh de primeira</code>, <code>questões detran</code></li>
-<li><strong>⏳ Idade / Maturidade:</strong> 57 dias rodando.</li>
-<li><strong>📈 Escala Detectada:</strong> 9 Library IDs únicos (~80 anúncios estimativos).</li>
-<li><strong>🧠 Copy capturada:</strong> &quot;Você não precisa de horas... precisa de consistência.&quot;</li>
-</ul>
-<h3>10. Aprova DETRAN</h3>
-<ul>
-<li><strong>🔗 Site / LP:</strong> <a href="https://www.aprovadetran.com.br/">aprovadetran.com.br</a></li>
-<li><strong>📸 Anúncio / Biblioteca:</strong> <a href="https://www.facebook.com/ads/library/?id=1547305459679317">Ver Anúncio (ID: 1547305459679317)</a></li>
-<li><strong>📚 Biblioteca do anunciante:</strong> <a href="https://www.facebook.com/ads/library/?active_status=all&ad_type=all&country=BR&search_type=page&view_all_page_id=1049751178429410">Ver todos os anúncios</a></li>
-<li><strong>👤 Anunciante:</strong> Aprova DETRAN</li>
-<li><strong>🔑 Keywords de origem:</strong> <code>prova detran</code>, <code>prova teórica detran</code>, <code>simulado detran</code>, <code>cnh de primeira</code>, <code>questões detran</code></li>
-<li><strong>⏳ Idade / Maturidade:</strong> 66 dias médios.</li>
-<li><strong>📈 Escala Detectada:</strong> 2 Library IDs únicos (~8 anúncios estimativos).</li>
-<li><strong>🧠 Copy capturada:</strong> &quot;Estude online para a prova do DETRAN com quem mais aprova no Brasil.&quot;</li>
-</ul>
-<h2>Rascunho <code>asdasdas.md</code> absorvido</h2>
-<p>Itens do rascunho que agora estão preservados aqui:</p>
-<ul>
-<li>Link de rastreio Autoescola Online: <code>id=1631097831312534</code>, <code>view_all_page_id=460592113978748</code>.</li>
-<li>JSON bruto do Aprova DETRAN: <code>library_id=1547305459679317</code>, destino <a href="https://www.aprovadetran.com.br/">https://www.aprovadetran.com.br/</a>, copy &quot;Simulado DETRAN (2026)&quot;.</li>
-<li>Link de rastreio Passa Detran BR: <code>id=1275641514014469</code>, <code>view_all_page_id=1102799386241916</code>.</li>
-<li>Link de rastreio Audrey Junior: <code>id=1565073514960792</code>, <code>view_all_page_id=439851329201886</code>.</li>
-<li>Referência externa do rascunho: <a href="https://www.youtube.com/watch?v=fsx2SBwVRAw">YouTube <code>fsx2SBwVRAw</code></a>.</li>
-<li>Simulado Detran 2026: <a href="https://simuladosdetran2026.netlify.app/">https://simuladosdetran2026.netlify.app/</a>.</li>
-<li>Link de rastreio Auto Agente: <code>view_all_page_id=206411679218416</code>.</li>
-<li>Link de rastreio Kiwify / Ana Carla Roma: <code>view_all_page_id=1046620675201557</code>.</li>
-<li>Pre-checkout AutoAgenteZap: <a href="https://www.autoagentezap.com.br/pre-checkout?src=v3_aa0dea1a-35c3-451b-9c9f-0e48b5a34dec_69e568c7a40cbebddf7db9f3_510_t-12_s-1">https://www.autoagentezap.com.br/pre-checkout?src=v3_aa0dea1a-35c3-451b-9c9f-0e48b5a34dec_69e568c7a40cbebddf7db9f3_510_t-12_s-1</a>.</li>
-<li>Duplicatas normalizadas do rascunho: <a href="https://autoagente.com.br/vsl/">https://autoagente.com.br/vsl/</a> e <a href="https://autoagente.com.br/">https://autoagente.com.br/</a>.</li>
-<li>O redirect bruto <code>l.facebook.com</code> do Aprova DETRAN foi normalizado para a URL final <a href="https://www.aprovadetran.com.br/">https://www.aprovadetran.com.br/</a>; o hash de tracking não carrega informação editorial útil.</li>
-</ul>
-<hr>
-<blockquote>
-<p>[!TIP]
-<strong>Aprofundando a escala:</strong> 
-O fato de alguns anúncios &quot;caírem no corte de IDs&quot; na captura delta significa que o robô achou apenas <em>1 criativo/ad</em> com a sua keyword. Isso não impede que o anunciante esteja rodando outros anúncios em campanhas diferentes ou sem keyword em texto! Se a promessa dessas LPs é realmente boa, a melhor próxima ação é acessar os links de &quot;Ver Anúncio&quot; acima e clicar em &quot;Ver anúncios&quot; diretamente na página do anunciante pelo navegador para ver o funil total!</p>
-</blockquote>
-<h2><strong><a href="https://cnh-de-primeira.semprenamoda.com.br/step-01-hero">👉 CLIQUE AQUI PARA INICIAR O FLUXO DA CNH DE PRIMEIRA</a></strong></h2>
-5:["$","main",null,{"className":"min-h-screen bg-[oklch(0.98_0.003_80)] text-[oklch(0.15_0.01_250)] p-8 sm:p-12","children":["$","div",null,{"className":"mx-auto max-w-3xl prose prose-slate  [&>h1]:text-4xl [&>h1]:font-extrabold [&>h1]:mb-6 [&>h1]:text-black [&>h2]:text-2xl [&>h2]:font-bold [&>h2]:mt-10 [&>h2]:mb-4 [&>h2]:border-b [&>h2]:pb-2 [&>h3]:text-xl [&>h3]:font-bold [&>h3]:mt-8 [&>h3]:mb-3 [&>p]:text-lg [&>p]:leading-relaxed [&>p]:mb-4 [&>ul]:list-disc [&>ul]:pl-6 [&>ul]:mb-6 [&>ul>li]:mb-2 [&>a]:text-blue-600 [&>a]:underline [&>a]:font-medium [&>blockquote]:border-l-4 [&>blockquote]:border-blue-500 [&>blockquote]:bg-blue-50 [&>blockquote]:p-4 [&>blockquote]:rounded-r-lg [&>blockquote]:my-6 [&>hr]:my-8 [&>hr]:border-[oklch(0.9_0.008_250)] [&_strong]:font-bold [&_strong]:text-black [&_code]:bg-[oklch(0.92_0.01_250)] [&_code]:px-1.5 [&_code]:py-0.5 [&_code]:rounded-md [&_code]:text-sm [&_code]:font-mono","dangerouslySetInnerHTML":{"__html":"$e"}}]}]
-a:[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]
-f:I[27201,["/_next/static/chunks/05-c3ty_6dwfk.js","/_next/static/chunks/14mrh2-p_w84d.js"],"IconMark"]
-8:null
-c:[["$","title","0",{"children":"CNH de Primeira"}],["$","meta","1",{"name":"description","content":"Diagnóstico rápido para estudar para a prova teórica da CNH com mais clareza."}],["$","link","2",{"rel":"icon","href":"/favicon.ico?favicon.2vob68tjqpejf.ico","sizes":"256x256","type":"image/x-icon"}],["$","$Lf","3",{}]]
+5:I[85437,["/_next/static/chunks/05-c3ty_6dwfk.js","/_next/static/chunks/14mrh2-p_w84d.js","/_next/static/chunks/3pq54dbwb-hwm.js","/_next/static/chunks/01w3dgnxypssu.js","/_next/static/chunks/1kmzfrn9ymvcu.js"],"Image"]
+e:I[68027,["/_next/static/chunks/05-c3ty_6dwfk.js","/_next/static/chunks/14mrh2-p_w84d.js"],"default",1]
+:HL["/_next/static/chunks/3y_h44-bx0bb4.css","style"]
+:HL["/_next/static/chunks/0y996s3gi3jkw.css","style"]
+:HL["/_next/static/media/1b99372b3eaef0c8-s.p.1gsd1jahc5dg_.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
+0:{"P":null,"c":["",""],"q":"","i":false,"f":[[["",{"children":["__PAGE__",{}]},"$undefined","$undefined",16],[["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/chunks/3y_h44-bx0bb4.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}],["$","link","1",{"rel":"stylesheet","href":"/_next/static/chunks/0y996s3gi3jkw.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}],["$","script","script-0",{"src":"/_next/static/chunks/05-c3ty_6dwfk.js","async":true,"nonce":"$undefined"}],["$","script","script-1",{"src":"/_next/static/chunks/14mrh2-p_w84d.js","async":true,"nonce":"$undefined"}]],["$","html",null,{"lang":"pt-BR","className":"h-full overflow-x-hidden antialiased outfit_9edc4f9a-module__h4ISCa__className","children":["$","body",null,{"className":"min-h-full flex flex-col overflow-x-hidden","children":["$","$L2",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L3",null,{"children":["$","$L4",null,{}]}],"templateStyles":[],"templateScripts":[["$","script","script-0",{"src":"/_next/static/chunks/186aes2uq6bw_.js","async":true}],["$","script","script-1",{"src":"/_next/static/chunks/0l42l9m5bwqd7.js","async":true}]],"notFound":[[["$","title",null,{"children":"404: This page could not be found."}],["$","div",null,{"style":{"fontFamily":"system-ui,\"Segoe UI\",Roboto,Helvetica,Arial,sans-serif,\"Apple Color Emoji\",\"Segoe UI Emoji\"","height":"100vh","textAlign":"center","display":"flex","flexDirection":"column","alignItems":"center","justifyContent":"center"},"children":["$","div",null,{"children":[["$","style",null,{"dangerouslySetInnerHTML":{"__html":"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}"}}],["$","h1",null,{"className":"next-error-h1","style":{"display":"inline-block","margin":"0 20px 0 0","padding":"0 23px 0 0","fontSize":24,"fontWeight":500,"verticalAlign":"top","lineHeight":"49px"},"children":404}],["$","div",null,{"style":{"display":"inline-block"},"children":["$","h2",null,{"style":{"fontSize":14,"fontWeight":400,"lineHeight":"49px","margin":0},"children":"This page could not be found."}]}]]}]}]],[]],"forbidden":"$undefined","unauthorized":"$undefined"}]}]}]]}],{"children":[["$","$1","c",{"children":[["$","div",null,{"className":"relative overflow-hidden min-h-screen bg-slate-50","children":[["$","div",null,{"className":"hidden lg:block absolute z-0 rounded-full blur-[80px] opacity-40 pointer-events-none bg-emerald-500 w-[400px] h-[400px] -top-[100px] right-[10%] transform-gpu will-change-transform"}],["$","div",null,{"className":"hidden lg:block absolute z-0 rounded-full blur-[80px] opacity-40 pointer-events-none bg-blue-500 w-[300px] h-[300px] -bottom-[50px] -left-[100px] transform-gpu will-change-transform"}],["$","main",null,{"className":"relative min-h-screen flex flex-col lg:justify-center z-10","children":["$","div",null,{"className":"grid grid-cols-1 lg:grid-cols-2 w-full max-w-7xl mx-auto lg:px-8","children":[["$","div",null,{"className":"order-1 lg:order-2 relative w-full aspect-[4/3] md:aspect-[16/9] lg:aspect-auto lg:h-[700px] lg:rounded-3xl overflow-hidden lg:shadow-2xl lg:[transform:perspective(1000px)_rotateY(-5deg)_translateZ(0)] hover:lg:[transform:perspective(1000px)_rotateY(0deg)_translateZ(0)] transition-transform duration-500 will-change-transform transform-gpu","children":[["$","$L5",null,{"src":"/images/hero.png","alt":"Jovem comemorando aprovação na prova teórica com alívio","fill":true,"priority":true,"className":"object-cover object-bottom lg:object-center scale-110 lg:scale-100 origin-bottom"}],["$","div",null,{"className":"absolute inset-0 bg-gradient-to-t from-slate-50 via-slate-50/80 to-transparent lg:hidden"}]]}],["$","div",null,{"className":"order-2 lg:order-1 relative z-20 flex flex-col gap-6 lg:items-start text-center lg:text-left px-6 lg:px-0 -mt-[20%] md:-mt-[15%] lg:mt-0 pb-16 lg:pb-0","children":[["$","div",null,{"className":"inline-block px-4 py-2 bg-slate-50/80 backdrop-blur-md border border-emerald-100 text-emerald-800 rounded-full font-semibold text-sm w-fit lg:mx-0 mx-auto tracking-wide shadow-sm","children":"Você está pronto(a) para a prova teórica?"}],"$L6","$L7","$L8"]}]]}]}]]}],["$L9","$La","$Lb"],"$Lc"]}],{},null,false,null]},null,false,null],"$Ld",false]],"m":"$undefined","G":["$e",["$Lf","$L10"]],"S":true,"h":null,"s":"$undefined","l":"$undefined","p":"$undefined","d":"$undefined","b":"p81WMr3ebJd5WdsmzQalU"}
+11:I[63605,["/_next/static/chunks/05-c3ty_6dwfk.js","/_next/static/chunks/14mrh2-p_w84d.js","/_next/static/chunks/3pq54dbwb-hwm.js","/_next/static/chunks/01w3dgnxypssu.js","/_next/static/chunks/1kmzfrn9ymvcu.js"],"TextEffect"]
+12:I[94691,["/_next/static/chunks/05-c3ty_6dwfk.js","/_next/static/chunks/14mrh2-p_w84d.js","/_next/static/chunks/3pq54dbwb-hwm.js","/_next/static/chunks/01w3dgnxypssu.js","/_next/static/chunks/1kmzfrn9ymvcu.js"],"Typewriter"]
+13:I[22016,["/_next/static/chunks/05-c3ty_6dwfk.js","/_next/static/chunks/14mrh2-p_w84d.js","/_next/static/chunks/3pq54dbwb-hwm.js","/_next/static/chunks/01w3dgnxypssu.js","/_next/static/chunks/1kmzfrn9ymvcu.js"],""]
+14:I[97367,["/_next/static/chunks/05-c3ty_6dwfk.js","/_next/static/chunks/14mrh2-p_w84d.js"],"OutletBoundary"]
+15:"$Sreact.suspense"
+17:I[97367,["/_next/static/chunks/05-c3ty_6dwfk.js","/_next/static/chunks/14mrh2-p_w84d.js"],"ViewportBoundary"]
+19:I[97367,["/_next/static/chunks/05-c3ty_6dwfk.js","/_next/static/chunks/14mrh2-p_w84d.js"],"MetadataBoundary"]
+6:["$","h1",null,{"className":"text-4xl md:text-5xl lg:text-6xl font-medium leading-tight text-slate-900 tracking-tight drop-shadow-sm lg:drop-shadow-none","children":[["$","$L11",null,{"variants":{"container":{"hidden":{"opacity":0},"visible":{"opacity":1,"transition":{"staggerChildren":0.15}}},"item":{"hidden":{"opacity":0,"filter":"blur(12px)"},"visible":{"opacity":1,"filter":"blur(0px)","transition":{"duration":1.2}}}},"per":"word","delay":0.2,"children":"A CNH mudou."}],["$","span",null,{"className":"text-emerald-600 inline-block mt-2","children":["$","$L11",null,{"variants":{"container":{"hidden":{"opacity":0},"visible":{"opacity":1,"transition":{"staggerChildren":0.15}}},"item":{"hidden":{"opacity":0,"y":20},"visible":{"opacity":1,"y":0,"transition":{"duration":0.8,"ease":"easeOut"}}}},"per":"word","delay":1.2,"children":"O jeito de estudar também."}]}]]}]
+7:["$","div",null,{"className":"text-lg md:text-xl leading-relaxed text-slate-700 max-w-[540px] lg:mx-0 mx-auto mt-2 min-h-[140px] md:min-h-[100px]","children":["$","$L12",null,{"text":"O novo processo ficou mais livre. Agora você precisa de um plano para não se perder. Antes de marcar a prova, descubra se você está pronto e elimine o medo de reprovar.","speed":35,"initialDelay":2200,"loop":false}]}]
+8:["$","div",null,{"className":"flex flex-wrap gap-4 mt-2 lg:justify-start justify-center w-full","children":["$","$L13",null,{"href":"/step-02-pergunta-01","className":"inline-flex items-center justify-center px-8 py-4 rounded-xl font-medium text-lg bg-emerald-500 text-white shadow-[0_4px_14px_0_rgba(16,185,129,0.39)] hover:bg-emerald-600 hover:-translate-y-0.5 hover:shadow-[0_6px_20px_rgba(16,185,129,0.23)] transition-all","children":"É GRÁTIS! É RÁPIDO! 🚦➡️"}]}]
+9:["$","script","script-0",{"src":"/_next/static/chunks/3pq54dbwb-hwm.js","async":true,"nonce":"$undefined"}]
+a:["$","script","script-1",{"src":"/_next/static/chunks/01w3dgnxypssu.js","async":true,"nonce":"$undefined"}]
+b:["$","script","script-2",{"src":"/_next/static/chunks/1kmzfrn9ymvcu.js","async":true,"nonce":"$undefined"}]
+c:["$","$L14",null,{"children":["$","$15",null,{"name":"Next.MetadataOutlet","children":"$@16"}]}]
+d:["$","$1","h",{"children":[null,["$","$L17",null,{"children":"$L18"}],["$","div",null,{"hidden":true,"children":["$","$L19",null,{"children":["$","$15",null,{"name":"Next.Metadata","children":"$L1a"}]}]}],["$","meta",null,{"name":"next-size-adjust","content":""}]]}]
+f:["$","link","0",{"rel":"stylesheet","href":"/_next/static/chunks/3y_h44-bx0bb4.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}]
+10:["$","link","1",{"rel":"stylesheet","href":"/_next/static/chunks/0y996s3gi3jkw.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}]
+18:[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]
+1b:I[27201,["/_next/static/chunks/05-c3ty_6dwfk.js","/_next/static/chunks/14mrh2-p_w84d.js"],"IconMark"]
+16:null
+1a:[["$","title","0",{"children":"CNH de Primeira"}],["$","meta","1",{"name":"description","content":"Diagnóstico rápido para estudar para a prova teórica da CNH com mais clareza."}],["$","link","2",{"rel":"icon","href":"/favicon.ico?favicon.2vob68tjqpejf.ico","sizes":"256x256","type":"image/x-icon"}],["$","$L1b","3",{}]]

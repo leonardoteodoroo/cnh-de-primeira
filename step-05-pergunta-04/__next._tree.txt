@@ -1,2 +1,4 @@
-:HL["/_next/static/chunks/1hv81fw71-4p7.css","style"]
-0:{"tree":{"name":"","param":null,"prefetchHints":16,"slots":{"children":{"name":"step-05-pergunta-04","param":null,"prefetchHints":0,"slots":{"children":{"name":"__PAGE__","param":null,"prefetchHints":0,"slots":null}}}}},"staleTime":300,"buildId":"dcfisl1m02tPt8PNkpqFA"}
+:HL["/_next/static/chunks/3y_h44-bx0bb4.css","style"]
+:HL["/_next/static/chunks/0y996s3gi3jkw.css","style"]
+:HL["/_next/static/media/1b99372b3eaef0c8-s.p.1gsd1jahc5dg_.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
+0:{"tree":{"name":"","param":null,"prefetchHints":16,"slots":{"children":{"name":"step-05-pergunta-04","param":null,"prefetchHints":0,"slots":{"children":{"name":"__PAGE__","param":null,"prefetchHints":0,"slots":null}}}}},"staleTime":300,"buildId":"p81WMr3ebJd5WdsmzQalU"}
