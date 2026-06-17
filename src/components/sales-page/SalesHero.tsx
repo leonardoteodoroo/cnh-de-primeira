@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import { ArrowDown, ArrowRight, BadgeCheck } from "lucide-react";
+import { ArrowRight, ShieldCheck } from "lucide-react";
 import { motion } from "framer-motion";
 import { salesCopy } from "./data";
 
@@ -20,20 +20,16 @@ export function SalesHero() {
             className="h-full w-full object-cover"
           />
         </picture>
-        <div className="absolute inset-0 bg-gradient-to-b from-black/55 via-black/50 to-[oklch(0.985_0.003_85)] md:via-black/30" />
+        <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/40 to-black md:via-black/30" />
       </div>
 
       <div className="relative mx-auto flex min-h-dvh max-w-6xl flex-col px-5 py-6 md:px-8">
-        <div className="flex flex-1 items-start pt-2 pb-14 md:items-center md:py-20">
-          <div className="grid w-full items-center gap-10 md:grid-cols-[1.04fr_0.78fr]">
-            <motion.div
-              initial={{ opacity: 0, y: 22 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.55, ease: [0.16, 1, 0.3, 1] }}
-              className="max-w-3xl"
-            >
-              <div className="mb-6 inline-flex items-center gap-2.5 rounded-full border border-white/10 bg-white/5 px-4 py-2 text-[11px] font-black uppercase tracking-[0.2em] text-yellow-300 backdrop-blur-md">
-                <BadgeCheck size={16} className="text-yellow-400" />
+        <div className="flex flex-1 items-start pt-12 pb-14 md:items-center md:py-20">
+          <div className="grid w-full items-center gap-12 md:grid-cols-2 md:gap-16">
+            
+            <div className="flex flex-col">
+              <div className="mb-6 inline-flex items-center gap-2 self-start rounded-full border border-yellow-500/30 bg-yellow-500/10 px-3 py-1.5 text-[10px] font-black tracking-widest text-yellow-500 uppercase md:mb-8 md:px-4 md:py-2 md:text-xs">
+                <ShieldCheck size={14} className="text-yellow-500" />
                 {salesCopy.heroEyebrow}
               </div>
 
@@ -44,33 +40,32 @@ export function SalesHero() {
                 <span className="block text-white">O jeito de estudar também.</span>
               </h1>
 
-              <p className="mt-8 max-w-[600px] text-lg font-medium leading-[1.65] text-white/70 md:text-[22px]">
+              <p className="mt-6 max-w-[600px] text-base leading-relaxed text-zinc-300 md:mt-8 md:text-xl">
                 {salesCopy.heroBody}
               </p>
 
-              <div className="mt-8 flex flex-col gap-3 sm:flex-row">
+              <div className="mt-8 flex flex-col gap-4 md:mt-10 md:flex-row md:items-center">
                 <Link
                   href="#oferta"
-                  className="inline-flex min-h-14 items-center justify-center gap-2 rounded-full bg-yellow-300 px-6 text-sm font-black uppercase tracking-wide text-black shadow-[0_18px_50px_rgba(250,204,21,0.24)] transition hover:bg-yellow-200"
+                  className="group relative inline-flex items-center justify-center gap-3 rounded-full bg-yellow-500 px-8 py-4 text-sm font-black text-zinc-950 transition-all hover:bg-yellow-400 hover:scale-[1.02] active:scale-[0.98] md:px-10 md:py-5 md:text-base"
                 >
                   {salesCopy.primaryCta}
-                  <ArrowRight size={18} />
+                  <ArrowRight size={18} className="transition-transform group-hover:translate-x-1" />
                 </Link>
                 <Link
                   href="#oferta"
-                  className="inline-flex min-h-14 items-center justify-center gap-2 rounded-full border border-white/18 bg-white/10 px-6 text-sm font-bold text-white backdrop-blur transition hover:bg-white/16"
+                  className="inline-flex items-center justify-center rounded-full border border-white/20 bg-white/5 px-8 py-4 text-sm font-bold text-white transition-colors hover:bg-white/10 md:px-10 md:py-5 md:text-base"
                 >
                   {salesCopy.secondaryCta}
-                  <ArrowDown size={18} />
                 </Link>
               </div>
-            </motion.div>
+            </div>
 
             <motion.div
               initial={{ opacity: 0, y: 22 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.65, delay: 0.12, ease: [0.16, 1, 0.3, 1] }}
-              className="-mx-5 mt-10 border-y border-white/10 bg-black/40 pb-5 shadow-2xl backdrop-blur-xl md:mx-0 md:mt-0 md:rounded-[28px] md:border md:bg-white/10 md:p-3 md:pb-3"
+              className="-mx-5 mt-10 border-y border-white/10 bg-black/50 pb-5 shadow-2xl backdrop-blur-xl md:mx-0 md:mt-0 md:rounded-[28px] md:border md:bg-white/10 md:p-3 md:pb-3"
             >
               <div className="relative aspect-video w-full overflow-hidden shadow-inner md:aspect-[4/3] md:rounded-[20px]">
                 <Image
@@ -80,6 +75,7 @@ export function SalesHero() {
                   sizes="(max-width: 768px) 100vw, 50vw"
                   className="object-cover"
                 />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/0 to-transparent md:hidden" />
                 <div className="absolute inset-0 ring-1 ring-inset ring-white/10" />
               </div>
               
