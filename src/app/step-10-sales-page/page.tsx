@@ -1,4 +1,5 @@
 import { DiagnosticShift } from "@/components/sales-page/DiagnosticShift";
+import { FAQAndClose } from "@/components/sales-page/FAQAndClose";
 import { InstructorSection } from "@/components/sales-page/InstructorSection";
 import { OfferStack } from "@/components/sales-page/OfferStack";
 import { SalesHero } from "@/components/sales-page/SalesHero";
@@ -14,6 +15,7 @@ export default function Step10SalesPage() {
       <InstructorSection />
       <StudentResultsStepper />
       <WallOfLove />
+      <FAQAndClose />
     </main>
   );
 }

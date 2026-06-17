@@ -110,7 +110,7 @@ export default function Step09EstudarCerto() {
           className="w-full mb-8 px-5"
         >
           <p className="text-[oklch(0.3_0.01_250)] text-[15px] leading-relaxed">
-            O segredo da aprovação não é sair consuminto tudo loucamente! Você precisa de um plano, não de sorte.
+            O segredo da aprovação não é sair consumindo tudo loucamente! Você precisa de um plano, não de sorte.
           </p>
         </motion.div>
 
@@ -123,7 +123,7 @@ export default function Step09EstudarCerto() {
             className="w-full"
           >
             <Link
-              href="/" // Atualizar para o step-10 depois
+              href="/step-10-sales-page"
               className="w-full py-4 rounded-2xl bg-[oklch(0.25_0.01_250)] text-white text-[15px] font-semibold flex items-center justify-center gap-2 active:scale-[0.98] transition-transform duration-150 shadow-[0_4px_16px_oklch(0.15_0.01_250/20%)]"
             >
               Vamos construir um plano com calma?

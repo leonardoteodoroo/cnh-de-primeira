@@ -194,7 +194,7 @@ export const faqItems = [
   {
     question: "As questões são iguais às do Detran?",
     answer:
-      "Não prometemos questão vazada, banco oficial ou cópia da prova. O treinamento usa temas, formato e raciocínio compatíveis com o que costuma ser cobrado na prova teórica.",
+      "Nós não prometemos questão vazada, banco oficial ou cópia da prova. O treinamento usa temas, formato e raciocínio compatíveis com o que costuma ser cobrado na prova teórica.",
   },
   {
     question: "Isso substitui a autoescola, app oficial ou etapa do Detran?",
