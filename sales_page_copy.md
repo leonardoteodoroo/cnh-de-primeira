@@ -7,7 +7,7 @@ Este documento centraliza toda a copy atual da página de vendas, seção por se
 ## 1. Hero Section (SalesHero)
 **Eyebrow (Chapéu):** CURSO PREPARATÓRIO PARA A PROVA DA CNH + SIMULADOS
 **H1:** A CNH mudou. O jeito de estudar também.
-**Body:** O gratuito te entrega conteúdo. O curso preparatório para a prova da CNH te entrega direção. Faça um diagnóstico, veja onde você ainda erra e siga um plano simples antes de encarar a prova teórica.
+**Body:** O gratuito te entrega conteúdo. O curso preparatório para a prova da CNH te entrega direção. Você já viu no teste onde a prova pode te derrubar. Agora, pare de tentar decorar tudo e siga um treino focado para não desperdiçar seu tempo e dinheiro com reprovação.
 **CTA Principal:** Quero estudar com direção
 **CTA Secundário:** Ver o que recebo
 **Rótulos na Imagem:** Diagnóstico | Questões | Plano
