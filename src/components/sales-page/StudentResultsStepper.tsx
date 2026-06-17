@@ -79,13 +79,13 @@ export function StudentResultsStepper() {
         </div>
 
         <div className="mt-16 overflow-hidden">
-          <div className="-mx-5 mb-16 overflow-hidden md:mx-auto md:max-w-5xl md:rounded-[28px] md:shadow-2xl md:ring-1 md:ring-zinc-200/50">
+          <div className="relative left-1/2 mb-16 w-screen -translate-x-1/2 overflow-hidden">
             <Image
               src="/images/hero-16-9-2.jpeg"
               alt="Milhares de alunos com mais clareza"
               width={1600}
               height={900}
-              className="aspect-[16/9] w-full object-cover"
+              className="aspect-[16/9] md:aspect-[21/9] w-full scale-[1.18] object-cover"
             />
           </div>
           <h3 className="mb-6 text-center text-sm font-black uppercase tracking-[0.18em] text-zinc-400">
