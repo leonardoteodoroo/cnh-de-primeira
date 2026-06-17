@@ -35,21 +35,13 @@ export default function Step08Depoimentos() {
           {/* Overlapping Avatars */}
           <div className="flex items-center gap-3">
             <div className="flex -space-x-3">
-              {[
-                { url: "https://i.pravatar.cc/150?u=1", alt: "Aluno 1" },
-                { url: "https://i.pravatar.cc/150?u=2", alt: "Aluno 2" },
-                { url: "https://i.pravatar.cc/150?u=3", alt: "Aluno 3" },
-              ].map(({ url, alt }, i) => (
+              {["R", "C", "T"].map((initial, i) => (
                 <div
                   key={i}
-                  className="w-10 h-10 rounded-full border-2 border-white overflow-hidden bg-[oklch(0.96_0.02_250)] flex-shrink-0"
+                  aria-hidden="true"
+                  className="flex h-10 w-10 flex-shrink-0 items-center justify-center rounded-full border-2 border-white bg-[oklch(0.92_0.035_150)] text-[13px] font-bold text-[oklch(0.3_0.08_150)]"
                 >
-                  <img
-                    src={url}
-                    alt={alt}
-                    loading="lazy"
-                    className="w-full h-full object-cover"
-                  />
+                  {initial}
                 </div>
               ))}
             </div>
@@ -73,7 +65,7 @@ export default function Step08Depoimentos() {
             className="w-full"
           >
             <Link
-              href="/step-09-estudar-certo" // Será atualizado para o próximo step depois
+              href="/step-09-estudar-certo"
               className="w-full py-4 rounded-2xl bg-[oklch(0.25_0.01_250)] text-white text-[15px] font-semibold flex items-center justify-center gap-2 active:scale-[0.98] transition-transform duration-150 shadow-[0_4px_16px_oklch(0.15_0.01_250/20%)]"
             >
               Descobrir como eles passaram

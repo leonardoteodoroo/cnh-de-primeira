@@ -44,7 +44,7 @@ export default function Hero() {
           {/* Coluna de Imagem (Mobile First: Fica no topo ocupando a tela, com o degradê) */}
           <div className="order-1 lg:order-2 relative w-full aspect-[4/3] md:aspect-[16/9] lg:aspect-auto lg:h-[700px] lg:rounded-3xl overflow-hidden lg:shadow-2xl lg:[transform:perspective(1000px)_rotateY(-5deg)_translateZ(0)] hover:lg:[transform:perspective(1000px)_rotateY(0deg)_translateZ(0)] transition-transform duration-500 will-change-transform transform-gpu">
             <Image
-              src="/assets/images/hero.png"
+              src="/images/hero.png"
               alt="Jovem comemorando aprovação na prova teórica com alívio"
               fill
               priority

@@ -2,7 +2,9 @@ import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
   output: "export",
-  basePath: "/opcao-03",
+  turbopack: {
+    root: process.cwd(),
+  },
   trailingSlash: true,
   images: {
     unoptimized: true,

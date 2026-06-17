@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import { ArrowRight, Calculator } from "lucide-react";
+import { ArrowRight } from "lucide-react";
 import { motion } from "framer-motion";
 import { Typewriter } from "@/components/ui/typewriter";
 
@@ -20,7 +20,7 @@ export default function Step06Detran() {
           className="w-full aspect-video relative overflow-hidden"
         >
           <Image
-            src="/detran-profit.png"
+            src="/images/detran-profit.png"
             alt="Ilustração sobre o lucro sombrio das taxas de reteste do Detran"
             fill
             className="object-cover"

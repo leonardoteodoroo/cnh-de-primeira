@@ -1,6 +1,6 @@
 'use client';
 
-import { useEffect, useState } from "react"
+import { useEffect, useMemo, useState } from "react"
 import { motion, Variants } from "framer-motion"
 
 import { cn } from "@/lib/utils"
@@ -54,7 +54,7 @@ const Typewriter = ({
   const [currentTextIndex, setCurrentTextIndex] = useState(0)
   const [isFinished, setIsFinished] = useState(false)
 
-  const texts = Array.isArray(text) ? text : [text]
+  const texts = useMemo(() => Array.isArray(text) ? text : [text], [text])
 
   useEffect(() => {
     let timeout: NodeJS.Timeout
@@ -113,6 +113,7 @@ const Typewriter = ({
     currentTextIndex,
     loop,
     isFinished,
+    initialDelay,
   ])
 
   return (

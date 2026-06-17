@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CNH de Primeira - Hero</title>
+    <!-- Importando a fonte Inter do Google Fonts para um visual moderno -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+    <style>
+        /* CSS Reset e Variáveis de Tema */
+        :root {
+            --primary: #10b981; /* Emerald 500 */
+            --primary-hover: #059669;
+            --text-main: #0f172a;
+            --text-muted: #475569;
+            --bg-color: #f8fafc; /* Slate 50 */
+            --bg-badge: #d1fae5;
+            --text-badge: #065f46;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Inter', system-ui, -apple-system, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            overflow-x: hidden;
+            line-height: 1.5;
+        }
+
+        /* Estrutura Principal */
+        .hero-section {
+            position: relative;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            padding: 4rem 2rem;
+            max-width: 1280px;
+            margin: 0 auto;
+            z-index: 1;
+        }
+
+        .hero-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            align-items: center;
+            width: 100%;
+        }
+
+        /* Conteúdo da Esquerda (Texto) */
+        .hero-content {
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+            animation: fade-up 0.8s ease-out;
+        }
+
+        .hero-badge {
+            display: inline-block;
+            padding: 0.5rem 1rem;
+            background-color: var(--bg-badge);
+            color: var(--text-badge);
+            border-radius: 9999px;
+            font-weight: 600;
+            font-size: 0.875rem;
+            width: fit-content;
+            letter-spacing: 0.025em;
+        }
+
+        .hero-title {
+            font-size: clamp(2.5rem, 5vw, 4rem);
+            font-weight: 800;
+            line-height: 1.1;
+            color: var(--text-main);
+            letter-spacing: -0.02em;
+        }
+
+        .hero-title span {
+            color: var(--primary);
+        }
+
+        .hero-description {
+            font-size: clamp(1.125rem, 2vw, 1.25rem);
+            line-height: 1.6;
+            color: var(--text-muted);
+            max-width: 540px;
+        }
+
+        /* Botões */
+        .hero-buttons {
+            display: flex;
+            gap: 1rem;
+            margin-top: 1rem;
+        }
+
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            padding: 1rem 2rem;
+            border-radius: 0.75rem;
+            font-weight: 600;
+            font-size: 1.125rem;
+            text-decoration: none;
+            transition: all 0.2s ease;
+            cursor: pointer;
+            border: 2px solid transparent;
+        }
+
+        .btn-primary {
+            background-color: var(--primary);
+            color: white;
+            box-shadow: 0 4px 14px 0 rgba(16, 185, 129, 0.39);
+        }
+
+        .btn-primary:hover {
+            background-color: var(--primary-hover);
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(16, 185, 129, 0.23);
+        }
+
+        .btn-secondary {
+            background-color: white;
+            color: var(--text-main);
+            border-color: #e2e8f0;
+        }
+
+        .btn-secondary:hover {
+            background-color: #f1f5f9;
+            border-color: #cbd5e1;
+            transform: translateY(-2px);
+        }
+
+        /* Conteúdo da Direita (Imagem) */
+        .hero-image-wrapper {
+            position: relative;
+            border-radius: 1.5rem;
+            overflow: hidden;
+            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+            /* Leve inclinação 3D para dar dinamismo */
+            transform: perspective(1000px) rotateY(-5deg);
+            transition: transform 0.5s ease;
+            animation: fade-in 1s ease-out 0.3s backwards;
+        }
+
+        .hero-image-wrapper:hover {
+            transform: perspective(1000px) rotateY(0deg);
+        }
+
+        .hero-image {
+            width: 100%;
+            height: auto;
+            display: block;
+            object-fit: cover;
+        }
+
+        /* Elementos Decorativos de Fundo */
+        .decoration {
+            position: absolute;
+            z-index: 0;
+            border-radius: 50%;
+            filter: blur(80px);
+            opacity: 0.4;
+            pointer-events: none;
+        }
+
+        .dec-1 {
+            background: var(--primary);
+            width: 400px;
+            height: 400px;
+            top: -100px;
+            right: 10%;
+        }
+
+        .dec-2 {
+            background: #3b82f6; /* Blue 500 */
+            width: 300px;
+            height: 300px;
+            bottom: -50px;
+            left: -100px;
+        }
+
+        /* Animações */
+        @keyframes fade-up {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes fade-in {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        /* Responsividade */
+        @media (max-width: 968px) {
+            .hero-section {
+                padding-top: 6rem;
+                padding-bottom: 6rem;
+            }
+            .hero-container {
+                grid-template-columns: 1fr;
+                gap: 3rem;
+                text-align: center;
+            }
+            .hero-content {
+                align-items: center;
+            }
+            .hero-description {
+                margin: 0 auto;
+            }
+            .hero-buttons {
+                justify-content: center;
+                flex-wrap: wrap;
+                width: 100%;
+            }
+            .btn {
+                width: 100%;
+            }
+            .hero-image-wrapper {
+                transform: none; /* Remove efeito 3D no mobile */
+                max-width: 600px;
+                margin: 0 auto;
+            }
+            .dec-1 {
+                top: -50px;
+                right: -100px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Decorações de Fundo -->
+    <div class="decoration dec-1"></div>
+    <div class="decoration dec-2"></div>
+    
+    <!-- Seção Hero -->
+    <main class="hero-section">
+        <div class="hero-container">
+            <!-- Coluna de Texto -->
+            <div class="hero-content">
+                <div class="hero-badge">Diagnóstico Rápido</div>
+                <h1 class="hero-title">A CNH mudou.<br>O jeito de <span>estudar</span> também.</h1>
+                <p class="hero-description">
+                    O novo processo ficou mais livre. Agora você precisa de um plano para não se perder. Antes de marcar a prova, descubra se você está pronto e elimine o medo de reprovar.
+                </p>
+                <div class="hero-buttons">
+                    <a href="#diagnostico" class="btn btn-primary">Fazer Diagnóstico Gratuito</a>
+                    <a href="#como-funciona" class="btn btn-secondary">Entender o Plano</a>
+                </div>
+            </div>
+            
+            <!-- Coluna de Imagem -->
+            <div class="hero-image-wrapper">
+                <!-- Usando a imagem gerada (Vitória e Alívio) -->
+                <img src="../public/images/hero.png" alt="Jovem comemorando aprovação na prova teórica com alívio" class="hero-image">
+            </div>
+        </div>
+    </main>
+</body>
+</html>

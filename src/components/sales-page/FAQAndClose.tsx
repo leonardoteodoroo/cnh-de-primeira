@@ -15,7 +15,7 @@ export function FAQAndClose() {
               Respostas francas para não vender no grito.
             </h2>
             <p className="mt-5 text-base leading-relaxed text-white/68">
-              A página precisa soar adulta: sem aprovação garantida, sem questão vazada, sem fingir que substitui etapa oficial.
+              Transparência total. Sem promessas milagrosas, sem falsos atalhos e sem fingir que podemos substituir a etapa oficial do seu estado.
             </p>
           </div>
 

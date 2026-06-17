@@ -114,7 +114,7 @@ export function WallOfLove() {
           Pessoas que estavam inseguras antes de chegar na prova.
         </h2>
         <p className="mx-auto mt-5 max-w-2xl text-base leading-relaxed text-zinc-600 md:text-lg">
-          Use os depoimentos como prova emocional: nervosismo, estudo no ônibus, rotatória, pouco tempo e volta aos estudos depois dos 40.
+          Veja como pessoas reais, com pouco tempo e muito nervosismo, conseguiram transformar a insegurança em clareza no dia da prova.
         </p>
       </div>
 

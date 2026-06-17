@@ -1,36 +1,50 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# CNH de Primeira
 
-## Getting Started
+Funil estático em Next.js para o projeto **CNH de Primeira**. O app principal roda como a opção 3 da vitrine pública e é exportado com `basePath: /opcao-03` para publicação no GitHub Pages.
 
-First, run the development server:
+## Rodar localmente
 
 ```bash
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Abra:
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```text
+http://localhost:3000/opcao-03/
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+O caminho `/opcao-03` é intencional. Ele precisa bater com a rota publicada dentro da vitrine do domínio.
 
-## Learn More
+## Build estático
 
-To learn more about Next.js, take a look at the following resources:
+```bash
+npm run build
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+O Next gera a pasta `out/`. Para atualizar o pacote público da vitrine, copie o conteúdo de `out/` para `deploy_dist/opcao-03/`, preservando `deploy_dist/CNAME` e `deploy_dist/.nojekyll` na raiz.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## Publicação
 
-## Deploy on Vercel
+O domínio usado em produção é:
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+```text
+cnh-de-primeira.semprenamoda.com.br
+```
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+No GitHub Pages, o pacote publicado precisa manter estes arquivos na raiz:
+
+```text
+deploy_dist/CNAME
+deploy_dist/.nojekyll
+deploy_dist/index.html
+```
+
+Sem o `CNAME` na raiz do conteúdo publicado, o domínio customizado pode parar de responder corretamente.
+
+## Organização de imagens
+
+- Imagens usadas pelo app: `public/images/`
+- Ícones SVG padrão do Next: `public/`
+- Imagens de documentação e pesquisa: `docs/assets/images/`

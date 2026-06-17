@@ -17,10 +17,10 @@ export function StudentResultsStepper() {
               Como a preparação anda
             </p>
             <h2 className="text-3xl font-black leading-tight tracking-tight text-zinc-950 md:text-5xl">
-              Do susto no quiz até um plano claro de revisão.
+              O fim do medo de reprovar.
             </h2>
             <p className="mt-5 text-base leading-relaxed text-zinc-600 md:text-lg">
-              A estrutura replica o que funciona no funil: primeiro a pessoa percebe onde erra, depois recebe direção, depois treina até chegar mais calma.
+              Você não precisa se afogar em milhares de questões soltas. Você só precisa descobrir onde ainda está errando para chegar na prova teórica com confiança absoluta.
             </p>
 
             <div className="mt-8">

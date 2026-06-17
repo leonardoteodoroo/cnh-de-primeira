@@ -173,7 +173,7 @@ export const CarouselDepoimentos: React.FC = () => {
     });
   };
 
-  const handleDragEnd = (event: any, info: PanInfo) => {
+  const handleDragEnd = (_event: MouseEvent | TouchEvent | PointerEvent, info: PanInfo) => {
     const offset = info.offset.x;
     const velocity = info.velocity.x;
 
@@ -186,7 +186,7 @@ export const CarouselDepoimentos: React.FC = () => {
     }
   };
 
-  const handlePan = (event: any, info: PanInfo) => {
+  const handlePan = (_event: MouseEvent | TouchEvent | PointerEvent, info: PanInfo) => {
     x.set(x.get() + info.delta.x);
   };
 

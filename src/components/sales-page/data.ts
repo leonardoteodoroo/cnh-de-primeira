@@ -23,7 +23,7 @@ export const salesCopy = {
   diagnosticTitle: "Não é estudar mais. É estudar CERTO!",
   diagnosticBody:
     "Você pode assistir aula, fazer simulado, salvar vídeo e ainda assim chegar na prova sem saber se está pronto. Não por falta de esforço. Por falta de sequência.",
-  methodName: "Método Raio-X CNH",
+  methodName: "PARE DE SE AFOGAR EM QUESTÕES",
   methodBody:
     "Um plano de preparação que começa pelo diagnóstico, mostra os pontos fracos e transformou erro em treino guiado antes do Detran.",
   instructorName: "Anderson Mageski",
