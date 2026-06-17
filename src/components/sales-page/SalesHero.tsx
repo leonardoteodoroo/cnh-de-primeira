@@ -33,14 +33,46 @@ export function SalesHero() {
                 {salesCopy.heroEyebrow}
               </div>
 
-              <h1 className="max-w-[860px] text-[48px] font-extrabold leading-[1.05] tracking-tight md:text-[84px]">
+              {/* Título oculto no mobile, visível no desktop. Mantido para SEO. */}
+              <h1 className="sr-only md:not-sr-only md:max-w-[860px] md:text-[84px] md:font-extrabold md:leading-[1.05] md:tracking-tight">
                 <span className="mb-2 block text-white/80 md:text-[68px]">
                   A CNH mudou.
                 </span>
                 <span className="block text-white">O jeito de estudar também.</span>
               </h1>
 
-              <p className="mt-6 max-w-[600px] text-base leading-relaxed text-zinc-300 md:mt-8 md:text-xl">
+              {/* MOBILE IMAGE BLOCK (Substitui o título) */}
+              <motion.div
+                initial={{ opacity: 0, y: 22 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.65, delay: 0.12, ease: [0.16, 1, 0.3, 1] }}
+                className="-mx-5 mb-6 border-y border-white/10 bg-black/50 pb-5 shadow-2xl backdrop-blur-xl md:hidden"
+              >
+                <div className="relative aspect-video w-full overflow-hidden shadow-inner">
+                  <Image
+                    src="/images/vendas-temp/ad-3.png"
+                    alt="Interface do CNH de Primeira"
+                    fill
+                    sizes="100vw"
+                    className="object-cover"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/0 to-transparent" />
+                  <div className="absolute inset-0 ring-1 ring-inset ring-white/10" />
+                </div>
+                
+                <div className="mt-5 flex items-center justify-between gap-2 px-5">
+                  {["Diagnóstico", "Questões", "Plano"].map((label) => (
+                    <span
+                      key={label}
+                      className="flex-1 rounded-xl bg-white/10 py-2.5 text-center text-[10px] font-black uppercase tracking-wider text-white backdrop-blur-md"
+                    >
+                      {label}
+                    </span>
+                  ))}
+                </div>
+              </motion.div>
+
+              <p className="max-w-[600px] text-base leading-relaxed text-zinc-300 md:mt-8 md:text-xl">
                 {salesCopy.heroBody}
               </p>
 
@@ -61,29 +93,29 @@ export function SalesHero() {
               </div>
             </div>
 
+            {/* DESKTOP IMAGE BLOCK (Fica na coluna da direita) */}
             <motion.div
               initial={{ opacity: 0, y: 22 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.65, delay: 0.12, ease: [0.16, 1, 0.3, 1] }}
-              className="-mx-5 mt-10 border-y border-white/10 bg-black/50 pb-5 shadow-2xl backdrop-blur-xl md:mx-0 md:mt-0 md:rounded-[28px] md:border md:bg-white/10 md:p-3 md:pb-3"
+              className="hidden rounded-[28px] border border-white/10 bg-white/10 p-3 pb-3 shadow-2xl backdrop-blur-xl md:block"
             >
-              <div className="relative aspect-video w-full overflow-hidden shadow-inner md:aspect-[4/3] md:rounded-[20px]">
+              <div className="relative aspect-[4/3] w-full overflow-hidden rounded-[20px] shadow-inner">
                 <Image
                   src="/images/vendas-temp/ad-3.png"
                   alt="Interface do CNH de Primeira"
                   fill
-                  sizes="(max-width: 768px) 100vw, 50vw"
+                  sizes="50vw"
                   className="object-cover"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/0 to-transparent md:hidden" />
                 <div className="absolute inset-0 ring-1 ring-inset ring-white/10" />
               </div>
               
-              <div className="mt-5 flex items-center justify-between gap-2 px-5 md:mt-3 md:px-1">
+              <div className="mt-3 flex items-center justify-between gap-2 px-1">
                 {["Diagnóstico", "Questões", "Plano"].map((label) => (
                   <span
                     key={label}
-                    className="flex-1 rounded-xl bg-white/10 py-2.5 text-center text-[10px] font-black uppercase tracking-wider text-white backdrop-blur-md md:text-xs"
+                    className="flex-1 rounded-xl bg-white/10 py-2.5 text-center text-xs font-black uppercase tracking-wider text-white backdrop-blur-md"
                   >
                     {label}
                   </span>
