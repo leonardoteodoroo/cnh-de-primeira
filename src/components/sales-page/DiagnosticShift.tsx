@@ -6,9 +6,7 @@ export function DiagnosticShift() {
       <div className="mx-auto max-w-6xl">
         <div className="grid gap-10 md:grid-cols-[0.9fr_1.1fr] md:items-end">
           <div>
-            <p className="mb-3 text-xs font-black uppercase tracking-[0.18em] text-yellow-700">
-              O ponto que muda a venda
-            </p>
+
             <h2 className="text-3xl font-black leading-tight tracking-tight text-zinc-950 md:text-5xl">
               {salesCopy.diagnosticTitle}
             </h2>
