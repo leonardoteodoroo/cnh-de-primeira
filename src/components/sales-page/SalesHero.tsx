@@ -10,15 +10,17 @@ export function SalesHero() {
   return (
     <section className="relative overflow-hidden bg-[oklch(0.13_0.015_85)] text-white">
       <div className="absolute inset-0">
-        <Image
-          src="/images/vendas-temp/ad-3.png"
-          alt="Capa do CNH de Primeira com mesa de estudos, notebook com aula teórica e materiais de revisão"
-          fill
-          priority
-          sizes="100vw"
-          className="object-cover opacity-45"
-        />
-        <div className="absolute inset-0 bg-gradient-to-b from-black/55 via-black/50 to-[oklch(0.13_0.015_85)]" />
+        <picture>
+          <source media="(min-width: 768px)" srcSet="/images/vendas-temp/hero-desktop.jpeg" />
+          <img
+            src="/images/vendas-temp/hero-mobile.jpeg"
+            alt="Capa do método CNH de Primeira"
+            loading="eager"
+            decoding="sync"
+            className="h-full w-full object-cover"
+          />
+        </picture>
+        <div className="absolute inset-0 bg-gradient-to-b from-black/55 via-black/50 to-[oklch(0.985_0.003_85)] md:via-black/30" />
       </div>
 
       <div className="relative mx-auto flex min-h-dvh max-w-6xl flex-col px-5 py-6 md:px-8">
