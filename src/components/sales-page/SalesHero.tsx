@@ -37,8 +37,8 @@ export function SalesHero() {
                 {salesCopy.heroEyebrow}
               </div>
 
-              <h1 className="max-w-[860px] text-[48px] font-black leading-[0.95] tracking-[-0.04em] md:text-[84px]">
-                <span className="mb-2 block font-extrabold tracking-[-0.02em] text-white/60 md:text-[64px]">
+              <h1 className="max-w-[860px] text-[38px] font-black leading-[1.05] tracking-tight md:text-[84px] md:leading-[0.95] md:tracking-[-0.04em]">
+                <span className="mb-2 block text-[28px] font-extrabold tracking-normal text-white/80 md:text-[64px] md:tracking-[-0.02em]">
                   A CNH mudou.
                 </span>
                 <span className="block text-white">O jeito de estudar também.</span>
