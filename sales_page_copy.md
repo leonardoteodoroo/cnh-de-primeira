@@ -1,14 +1,12 @@
 # Copy da Sales Page (Step 10)
 
 Este documento centraliza toda a copy atual da página de vendas, seção por seção, do H1 até o rodapé.
-*Atenção: destaquei em **[ALERTA DE NOTA INTERNA]** os textos que vieram do seu plano como instruções de design/copywriter e que acabaram sendo renderizados na tela (o que gerou aquela estranheza no componente anterior).*
 
 ---
 
 ## 1. Hero Section (SalesHero)
 **Eyebrow (Chapéu):** CURSO PREPARATÓRIO PARA A PROVA DA CNH + SIMULADOS
 **H1:** A CNH mudou. O jeito de estudar também.
-**Subtítulo:** *(Removido)*
 **Body:** O gratuito te entrega conteúdo. O curso preparatório para a prova da CNH te entrega direção. Faça um diagnóstico, veja onde você ainda erra e siga um plano simples antes de encarar a prova teórica.
 **CTA Principal:** Quero estudar com direção
 **CTA Secundário:** Ver o que recebo
@@ -17,8 +15,7 @@ Este documento centraliza toda a copy atual da página de vendas, seção por se
 ---
 
 ## 2. Ponto de Virada (DiagnosticShift)
-*(O eyebrow "O ponto que muda a venda" foi removido nesta seção).*
-**H2:** Não é estudar mais. É estudar com direção.
+**H2:** Não é estudar mais. É estudar CERTO!
 **Body:** Você pode assistir aula, fazer simulado, salvar vídeo e ainda assim chegar na prova sem saber se está pronto. Não por falta de esforço. Por falta de sequência.
 
 **Dores (Cards):**
@@ -29,7 +26,7 @@ Este documento centraliza toda a copy atual da página de vendas, seção por se
 ---
 
 ## 3. Oferta (OfferStack)
-**Eyebrow:** Método Raio-X CNH *(Pendente de aprovação/substituição)*
+**Eyebrow:** PARE DE SE AFOGAR EM QUESTÕES
 **H2:** Um plano para transformar erro em revisão.
 **Body:** Um plano de preparação que começa pelo diagnóstico, mostra os pontos fracos e transformou erro em treino guiado antes do Detran.
 
@@ -62,8 +59,8 @@ Este documento centraliza toda a copy atual da página de vendas, seção por se
 
 ## 5. Como a preparação anda (StudentResultsStepper)
 **Eyebrow:** Como a preparação anda
-**H2:** Do susto no quiz até um plano claro de revisão. *(Que você comentou estar fraco)*
-**Body [ALERTA DE NOTA INTERNA]:** A estrutura replica o que funciona no funil: primeiro a pessoa percebe onde erra, depois recebe direção, depois treina até chegar mais calma.
+**H2:** O fim do medo de reprovar.
+**Body:** Você não precisa se afogar em milhares de questões soltas. Você só precisa descobrir onde ainda está errando para chegar na prova teórica com confiança absoluta.
 
 **Métricas Globais:**
 - 32.000+ alunos preparados
@@ -75,23 +72,20 @@ Este documento centraliza toda a copy atual da página de vendas, seção por se
 - **O que o aluno compra de verdade:** Não é uma pilha de aulas. É a tranquilidade de saber o que revisar antes de apostar a primeira tentativa.
 
 **Título do Ticker de Alunos:** Milhares de alunos com mais clareza
-*(Renderiza cards com casos rápidos: "gabaritou estudando no ônibus", "voltou a estudar aos 42", etc.)*
 
 ---
 
 ## 6. Prova Social (WallOfLove)
 **Eyebrow:** Mural do amor
 **H2:** Pessoas que estavam inseguras antes de chegar na prova.
-**Body [ALERTA DE NOTA INTERNA]:** Use os depoimentos como prova emocional: nervosismo, estudo no ônibus, rotatória, pouco tempo e volta aos estudos depois dos 40.
-
-*(Renderiza a matriz com depoimentos completos em formato de mural contínuo)*
+**Body:** Veja como pessoas reais, com pouco tempo e muito nervosismo, conseguiram transformar a insegurança em clareza no dia da prova.
 
 ---
 
 ## 7. FAQ e Fechamento (FAQAndClose)
 **Eyebrow:** Antes de decidir
 **H2:** Respostas francas para não vender no grito.
-**Body [ALERTA DE NOTA INTERNA]:** A página precisa soar adulta: sem aprovação garantida, sem questão vazada, sem fingir que substitui etapa oficial.
+**Body:** Transparência total. Sem promessas milagrosas, sem falsos atalhos e sem fingir que podemos substituir a etapa oficial do seu estado.
 
 **FAQ:**
 - **Se existe curso gratuito no app, por que eu pagaria?** Porque conteúdo gratuito não é a mesma coisa que diagnóstico. O CNH de Primeira organiza o estudo, mostra onde você erra e entrega treino guiado para revisar com direção.
