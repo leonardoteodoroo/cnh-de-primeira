@@ -20,7 +20,7 @@ export function SalesHero() {
             className="h-full w-full object-cover object-center"
           />
         </picture>
-        <div className="absolute inset-0 bg-gradient-to-b from-black/40 via-black/50 to-black/80 md:via-black/30 md:to-black/90" />
+        <div className="absolute inset-0 bg-gradient-to-b from-black/40 via-black/80 to-black/95 md:from-black/20 md:via-black/60 md:to-black/90" />
       </div>
 
       <div className="relative mx-auto flex min-h-dvh max-w-6xl flex-col px-5 py-6 md:px-8">
@@ -72,7 +72,7 @@ export function SalesHero() {
                 </div>
               </motion.div>
 
-              <p className="max-w-[600px] text-base leading-relaxed text-zinc-300 md:mt-8 md:text-xl">
+              <p className="max-w-[600px] text-base leading-relaxed text-zinc-200 drop-shadow-lg md:mt-8 md:text-xl">
                 {salesCopy.heroBody}
               </p>
 
