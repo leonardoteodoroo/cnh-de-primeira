@@ -3,6 +3,7 @@
 import { useEffect, useRef, useState } from "react";
 import { motion, useAnimationFrame, useMotionValue, useReducedMotion } from "framer-motion";
 import { reviewRows } from "./data";
+import { ScrollReveal } from "@/components/ui/scroll-reveal";
 
 interface Review {
   name: string;
@@ -106,7 +107,7 @@ function TickerRow({
 export function WallOfLove() {
   return (
     <section id="mural-do-amor" className="relative overflow-hidden bg-white py-16 md:py-24">
-      <div className="mx-auto max-w-6xl px-5 text-center md:px-8">
+      <ScrollReveal className="mx-auto max-w-6xl px-5 text-center md:px-8">
         <span className="inline-flex rounded-full bg-rose-50 px-4 py-1.5 text-xs font-black uppercase tracking-[0.16em] text-rose-600">
           Mural do amor
         </span>
@@ -116,7 +117,7 @@ export function WallOfLove() {
         <p className="mx-auto mt-5 max-w-2xl text-base leading-relaxed text-zinc-600 md:text-lg">
           Veja como pessoas reais, com pouco tempo e muito nervosismo, conseguiram transformar a insegurança em clareza no dia da prova.
         </p>
-      </div>
+      </ScrollReveal>
 
       <div className="relative mt-12 py-16">
         <div className="absolute inset-0">
@@ -130,10 +131,10 @@ export function WallOfLove() {
           <div className="absolute inset-0 bg-white/58 backdrop-blur-[2px]" />
         </div>
 
-        <div className="relative z-10 flex scale-[1.02] flex-col gap-4">
+        <ScrollReveal delay={0.2} className="relative z-10 flex scale-[1.02] flex-col gap-4">
           <TickerRow reviews={tickerRows[0] as Review[]} direction="left" speed={1.5} />
           <TickerRow reviews={tickerRows[1] as Review[]} direction="right" speed={1.5} />
-        </div>
+        </ScrollReveal>
 
         <div className="pointer-events-none absolute inset-y-0 left-0 z-20 w-10 bg-gradient-to-r from-white to-transparent md:w-32" />
         <div className="pointer-events-none absolute inset-y-0 right-0 z-20 w-10 bg-gradient-to-l from-white to-transparent md:w-32" />

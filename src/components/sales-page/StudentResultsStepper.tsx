@@ -3,6 +3,7 @@
 import { motion } from "framer-motion";
 import { CheckCircle2 } from "lucide-react";
 import { methodSteps, resultMetrics, studentCards } from "./data";
+import { ScrollReveal } from "@/components/ui/scroll-reveal";
 
 const tickerCards = [...studentCards, ...studentCards];
 
@@ -10,7 +11,7 @@ export function StudentResultsStepper() {
   return (
     <section className="relative overflow-hidden bg-zinc-50 px-5 py-16 md:px-8 md:py-24">
       <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_right,rgba(250,204,21,0.18),transparent_36%)]" />
-      <div className="relative mx-auto max-w-6xl">
+      <ScrollReveal className="relative mx-auto max-w-6xl">
         <div className="grid gap-12 md:grid-cols-[0.88fr_1.12fr] md:items-center">
           <div>
             <p className="mb-3 text-xs font-black uppercase tracking-[0.18em] text-yellow-700">
@@ -99,7 +100,7 @@ export function StudentResultsStepper() {
             ))}
           </motion.div>
         </div>
-      </div>
+      </ScrollReveal>
     </section>
   );
 }

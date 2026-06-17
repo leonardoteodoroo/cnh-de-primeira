@@ -17,7 +17,7 @@ export const salesCopy = {
   heroEyebrow: "CURSO PREPARATÓRIO PARA A PROVA DA CNH + SIMULADOS",
   heroTitle: "A CNH mudou. O jeito de estudar também.",
   heroBody:
-    "O gratuito te entrega conteúdo. O curso preparatório para a prova da CNH te entrega direção. Você já viu no teste onde a prova pode te derrubar. Agora, pare de tentar decorar tudo e siga um treino focado para não desperdiçar seu tempo e dinheiro com reprovação.",
+    "O gratuito te entrega conteúdo. O curso preparatório para a prova da CNH te entrega direção. Você já viu no QUIZ onde a prova pode te derrubar. Agora, pare de tentar decorar tudo e siga um treino focado para não desperdiçar seu tempo e dinheiro com reprovação.",
   primaryCta: "Quero estudar com direção",
   secondaryCta: "Ver o que recebo",
   diagnosticTitle: "Não é estudar mais. É estudar CERTO!",

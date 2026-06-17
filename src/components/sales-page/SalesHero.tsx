@@ -9,25 +9,30 @@ import { salesCopy } from "./data";
 export function SalesHero() {
   return (
     <section className="relative overflow-hidden bg-[oklch(0.13_0.015_85)] text-white">
-      <div className="absolute inset-0">
-        <picture className="absolute inset-0 block">
+      <div className="absolute inset-0 h-full w-full">
+        <picture className="absolute inset-0 block h-full w-full">
           <source media="(min-width: 768px)" srcSet="/images/vendas-temp/hero-desktop.jpeg" />
           <img
             src="/images/vendas-temp/hero-mobile.jpeg"
             alt="Capa do método CNH de Primeira"
             loading="eager"
             decoding="sync"
-            className="h-full w-full object-cover object-center"
+            className="h-full w-full scale-[1.12] object-cover object-center md:scale-100"
           />
         </picture>
-        <div className="absolute inset-0 bg-gradient-to-b from-black/40 via-black/60 to-black/95 md:from-black/20 md:via-black/60 md:to-black/90" />
+        <div className="absolute inset-0 h-full w-full bg-gradient-to-b from-black/40 via-black/60 to-black/95 md:from-black/20 md:via-black/60 md:to-black/90" />
       </div>
 
       <div className="relative mx-auto flex min-h-dvh max-w-6xl flex-col px-5 py-6 md:px-8">
         <div className="flex flex-1 items-start pt-4 pb-14 md:items-center md:py-20">
           <div className="grid w-full items-center gap-12 md:grid-cols-2 md:gap-16">
             
-            <div className="flex flex-col">
+            <motion.div 
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.7, ease: [0.21, 0.47, 0.32, 0.98] }}
+              className="flex flex-col"
+            >
               <h1 className="mb-6 inline-flex items-center gap-2 self-start rounded-full border border-yellow-500/30 bg-yellow-500/10 px-3 py-1.5 text-[10px] font-black tracking-widest text-yellow-500 uppercase md:mb-8 md:px-4 md:py-2 md:text-xs">
                 <ShieldCheck size={14} className="text-yellow-500" />
                 {salesCopy.heroEyebrow}
@@ -60,7 +65,7 @@ export function SalesHero() {
                 </div>
                 
                 <div className="mt-5 flex items-center justify-between gap-2 px-5">
-                  {["Diagnóstico", "Questões", "Plano"].map((label) => (
+                  {["Mapeamento", "Treino", "Sua CNH"].map((label) => (
                     <span
                       key={label}
                       className="flex-1 rounded-xl bg-white/10 py-2.5 text-center text-[10px] font-black uppercase tracking-wider text-white backdrop-blur-md"
@@ -90,7 +95,7 @@ export function SalesHero() {
                   {salesCopy.secondaryCta}
                 </Link>
               </div>
-            </div>
+            </motion.div>
 
             {/* DESKTOP IMAGE BLOCK (Fica na coluna da direita) */}
             <motion.div
@@ -111,7 +116,7 @@ export function SalesHero() {
               </div>
               
               <div className="mt-3 flex items-center justify-between gap-2 px-1">
-                {["Diagnóstico", "Questões", "Plano"].map((label) => (
+                {["Mapeamento", "Treino", "Sua CNH"].map((label) => (
                   <span
                     key={label}
                     className="flex-1 rounded-xl bg-white/10 py-2.5 text-center text-xs font-black uppercase tracking-wider text-white backdrop-blur-md"

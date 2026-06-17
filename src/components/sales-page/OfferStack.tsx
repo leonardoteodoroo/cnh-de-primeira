@@ -1,9 +1,10 @@
 import { methodSteps, offerItems, salesCopy } from "./data";
+import { ScrollReveal } from "@/components/ui/scroll-reveal";
 
 export function OfferStack() {
   return (
     <section id="oferta" className="bg-[oklch(0.97_0.006_85)] px-5 py-16 md:px-8 md:py-24">
-      <div className="mx-auto max-w-6xl">
+      <ScrollReveal className="mx-auto max-w-6xl">
         <div className="mx-auto max-w-3xl text-center">
           <p className="mb-3 text-xs font-black uppercase tracking-[0.18em] text-yellow-700">
             {salesCopy.methodName}
@@ -40,7 +41,7 @@ export function OfferStack() {
             );
           })}
         </div>
-      </div>
+      </ScrollReveal>
     </section>
   );
 }

@@ -1,11 +1,12 @@
 import Link from "next/link";
 import { ArrowRight } from "lucide-react";
 import { faqItems, finalBullets, salesCopy } from "./data";
+import { ScrollReveal } from "@/components/ui/scroll-reveal";
 
 export function FAQAndClose() {
   return (
     <section className="bg-zinc-950 px-5 py-16 text-white md:px-8 md:py-24">
-      <div className="mx-auto max-w-6xl">
+      <ScrollReveal className="mx-auto max-w-6xl">
         <div className="grid gap-10 lg:grid-cols-[0.8fr_1.2fr]">
           <div>
             <p className="mb-3 text-xs font-black uppercase tracking-[0.18em] text-yellow-300">
@@ -60,7 +61,7 @@ export function FAQAndClose() {
             </Link>
           </div>
         </div>
-      </div>
+      </ScrollReveal>
     </section>
   );
 }
