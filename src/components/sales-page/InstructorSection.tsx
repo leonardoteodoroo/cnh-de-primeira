@@ -14,7 +14,7 @@ export function InstructorSection() {
             width={1792}
             height={2400}
             sizes="(min-width: 768px) 42vw, 100vw"
-            className="aspect-[4/5] w-full object-cover object-[50%_20%]"
+            className="aspect-[4/5] w-full object-cover object-[50%_20%] [mask-image:linear-gradient(to_bottom,black_85%,transparent_100%)]"
           />
           <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/75 to-transparent p-6">
             <p className="text-xs font-bold uppercase tracking-[0.18em] text-yellow-300">
