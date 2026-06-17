@@ -25,15 +25,15 @@ export function StudentResultsStepper() {
               Você não precisa se afogar em milhares de questões soltas. Você só precisa descobrir onde ainda está errando para chegar na prova teórica com confiança absoluta.
             </p>
 
-            <div className="mt-8">
-              <div className="relative mx-auto max-w-[390px] md:mx-0">
-                <div className="absolute left-0 right-0 top-4 h-[2px] rounded-full bg-yellow-100" />
+            <div className="mt-10 md:mt-8">
+              <div className="relative left-1/2 mx-auto w-screen max-w-none -translate-x-1/2 px-5 md:static md:mx-0 md:w-auto md:max-w-[390px] md:translate-x-0 md:px-0">
+                <div className="absolute left-0 right-0 top-4 h-[2px] rounded-full bg-yellow-100 md:left-0 md:right-0" />
                 <motion.div
                   initial={{ scaleX: 0 }}
                   whileInView={{ scaleX: 1 }}
                   viewport={{ once: true, margin: "-80px" }}
                   transition={{ duration: 1.4, ease: "easeInOut" }}
-                  className="absolute left-0 right-0 top-4 h-[2px] origin-left rounded-full bg-yellow-400"
+                  className="absolute left-0 right-0 top-4 h-[2px] origin-left rounded-full bg-yellow-400 md:left-0 md:right-0"
                 />
                 <div className="relative z-10 grid grid-cols-3 gap-2">
                   {methodSteps.map((step, index) => (
@@ -78,16 +78,17 @@ export function StudentResultsStepper() {
           </div>
         </div>
 
-        <div className="mt-16 overflow-hidden">
-          <div className="relative left-1/2 mb-16 w-screen -translate-x-1/2 overflow-hidden">
-            <Image
-              src="/images/hero-16-9-2.jpeg"
-              alt="Milhares de alunos com mais clareza"
-              width={1600}
-              height={900}
-              className="aspect-[16/9] md:aspect-[21/9] w-full scale-[1.18] object-cover"
-            />
-          </div>
+        <div className="relative left-1/2 mb-16 mt-16 w-screen -translate-x-1/2 overflow-hidden">
+          <Image
+            src="/images/hero-16-9-2.jpeg"
+            alt="Milhares de alunos com mais clareza"
+            width={1600}
+            height={900}
+            className="aspect-[16/9] md:aspect-[21/9] w-full scale-[1.18] object-cover"
+          />
+        </div>
+
+        <div className="relative left-1/2 w-screen -translate-x-1/2 overflow-hidden">
           <h3 className="mb-6 text-center text-sm font-black uppercase tracking-[0.18em] text-zinc-400">
             Milhares de alunos com mais clareza
           </h3>
