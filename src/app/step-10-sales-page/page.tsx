@@ -2,6 +2,8 @@ import { DiagnosticShift } from "@/components/sales-page/DiagnosticShift";
 import { InstructorSection } from "@/components/sales-page/InstructorSection";
 import { OfferStack } from "@/components/sales-page/OfferStack";
 import { SalesHero } from "@/components/sales-page/SalesHero";
+import { StudentResultsStepper } from "@/components/sales-page/StudentResultsStepper";
+import { WallOfLove } from "@/components/sales-page/WallOfLove";
 
 export default function Step10SalesPage() {
   return (
@@ -10,6 +12,8 @@ export default function Step10SalesPage() {
       <DiagnosticShift />
       <OfferStack />
       <InstructorSection />
+      <StudentResultsStepper />
+      <WallOfLove />
     </main>
   );
 }
