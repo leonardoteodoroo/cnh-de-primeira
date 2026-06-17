@@ -24,7 +24,7 @@ export function SalesHero() {
       </div>
 
       <div className="relative mx-auto flex min-h-dvh max-w-6xl flex-col px-5 py-6 md:px-8">
-        <div className="flex flex-1 items-start pt-12 pb-14 md:items-center md:py-20">
+        <div className="flex flex-1 items-start pt-4 pb-14 md:items-center md:py-20">
           <div className="grid w-full items-center gap-12 md:grid-cols-2 md:gap-16">
             
             <div className="flex flex-col">
