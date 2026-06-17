@@ -17,10 +17,10 @@ export function SalesHero() {
             alt="Capa do método CNH de Primeira"
             loading="eager"
             decoding="sync"
-            className="h-full w-full object-cover object-bottom md:object-center"
+            className="h-full w-full object-cover object-center"
           />
         </picture>
-        <div className="absolute inset-0 bg-gradient-to-b from-black/80 via-black/40 to-black/90 md:via-black/30 md:to-black" />
+        <div className="absolute inset-0 bg-gradient-to-b from-black/20 via-black/50 to-black/90 md:via-black/30 md:to-black" />
       </div>
 
       <div className="relative mx-auto flex min-h-dvh max-w-6xl flex-col px-5 py-6 md:px-8">
