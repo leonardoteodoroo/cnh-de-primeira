@@ -84,7 +84,7 @@ export function SalesHero() {
               </div>
               
               <div className="mt-5 flex items-center justify-between gap-2 px-5 md:mt-3 md:px-1">
-                {salesCopy.imageLabels.map((label) => (
+                {["Diagnóstico", "Questões", "Plano"].map((label) => (
                   <span
                     key={label}
                     className="flex-1 rounded-xl bg-white/10 py-2.5 text-center text-[10px] font-black uppercase tracking-wider text-white backdrop-blur-md md:text-xs"
