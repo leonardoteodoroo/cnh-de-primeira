@@ -18,7 +18,7 @@ export const salesCopy = {
   heroTitle: "A CNH mudou. O jeito de estudar também.",
   heroSubtitle: "Sua CNH na primeira tentativa!",
   heroBody:
-    "O gratuito te entrega conteúdo. O CNH de Primeira te entrega direção. Faça um diagnóstico, veja onde você ainda erra e siga um plano simples antes de encarar a prova teórica.",
+    "O gratuito te entrega conteúdo. O curso preparatório para a prova da CNH te entrega direção. Faça um diagnóstico, veja onde você ainda erra e siga um plano simples antes de encarar a prova teórica.",
   primaryCta: "Quero estudar com direção",
   secondaryCta: "Ver o que recebo",
   diagnosticTitle: "Não é estudar mais. É estudar com direção.",

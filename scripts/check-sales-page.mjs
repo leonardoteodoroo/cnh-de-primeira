@@ -38,7 +38,7 @@ assert.match(salesPage, /FAQAndClose/, "Página deve renderizar FAQAndClose");
 const data = read("src/components/sales-page/data.ts");
 const requiredCopy = [
   "A CNH mudou. O jeito de estudar também.",
-  "O gratuito te entrega conteúdo. O CNH de Primeira te entrega direção.",
+  "O gratuito te entrega conteúdo. O curso preparatório para a prova da CNH te entrega direção.",
   "Não é estudar mais. É estudar com direção.",
   "Método Raio-X CNH",
   "Anderson Mageski",
