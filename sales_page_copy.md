@@ -6,9 +6,9 @@ Este documento centraliza toda a copy atual da página de vendas, seção por se
 ---
 
 ## 1. Hero Section (SalesHero)
-**Eyebrow (Chapéu):** CNH de Primeira · Método Anderson Mageski
+**Eyebrow (Chapéu):** CURSO PREPARATÓRIO PARA A PROVA DA CNH + SIMULADOS
 **H1:** A CNH mudou. O jeito de estudar também.
-**Subtítulo:** CURSO PREPARATÓRIO PARA A PROVA DA CNH + SIMULADOS
+**Subtítulo:** *(Removido)*
 **Body:** O gratuito te entrega conteúdo. O curso preparatório para a prova da CNH te entrega direção. Faça um diagnóstico, veja onde você ainda erra e siga um plano simples antes de encarar a prova teórica.
 **CTA Principal:** Quero estudar com direção
 **CTA Secundário:** Ver o que recebo

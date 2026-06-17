@@ -42,9 +42,6 @@ export function SalesHero() {
                 {salesCopy.heroEyebrow}
               </div>
 
-              <p className="mb-3 text-sm font-bold uppercase tracking-[0.22em] text-yellow-300">
-                {salesCopy.heroSubtitle}
-              </p>
 
               <h1 className="max-w-[860px] text-[44px] font-black leading-[0.95] tracking-tight md:text-[78px]">
                 {salesCopy.heroTitle}
