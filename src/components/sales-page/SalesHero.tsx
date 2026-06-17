@@ -30,17 +30,19 @@ export function SalesHero() {
               transition={{ duration: 0.55, ease: [0.16, 1, 0.3, 1] }}
               className="max-w-3xl"
             >
-              <div className="mb-5 inline-flex items-center gap-2 rounded-full border border-white/18 bg-white/10 px-3 py-1.5 text-xs font-bold uppercase tracking-[0.16em] text-yellow-200 backdrop-blur">
-                <BadgeCheck size={16} />
+              <div className="mb-6 inline-flex items-center gap-2.5 rounded-full border border-white/10 bg-white/5 px-4 py-2 text-[11px] font-black uppercase tracking-[0.2em] text-yellow-300 backdrop-blur-md">
+                <BadgeCheck size={16} className="text-yellow-400" />
                 {salesCopy.heroEyebrow}
               </div>
 
-
-              <h1 className="max-w-[860px] text-[44px] font-black leading-[0.95] tracking-tight md:text-[78px]">
-                {salesCopy.heroTitle}
+              <h1 className="max-w-[860px] text-[48px] font-black leading-[0.95] tracking-[-0.04em] md:text-[84px]">
+                <span className="mb-2 block font-extrabold tracking-[-0.02em] text-white/60 md:text-[64px]">
+                  A CNH mudou.
+                </span>
+                <span className="block text-white">O jeito de estudar também.</span>
               </h1>
 
-              <p className="mt-6 max-w-2xl text-base leading-relaxed text-white/82 md:text-xl">
+              <p className="mt-8 max-w-[600px] text-lg font-medium leading-[1.65] text-white/70 md:text-[22px]">
                 {salesCopy.heroBody}
               </p>
 
