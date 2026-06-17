@@ -67,25 +67,31 @@ export function SalesHero() {
             </motion.div>
 
             <motion.div
-              initial={{ opacity: 0, scale: 0.96, y: 22 }}
-              animate={{ opacity: 1, scale: 1, y: 0 }}
+              initial={{ opacity: 0, y: 22 }}
+              animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.65, delay: 0.12, ease: [0.16, 1, 0.3, 1] }}
-              className="rounded-[28px] border border-white/16 bg-white/10 p-3 shadow-2xl backdrop-blur-md"
+              className="-mx-5 mt-10 border-y border-white/10 bg-black/40 pb-5 shadow-2xl backdrop-blur-xl md:mx-0 md:mt-0 md:rounded-[28px] md:border md:bg-white/10 md:p-3 md:pb-3"
             >
-              <div className="overflow-hidden rounded-[20px] bg-black">
+              <div className="relative aspect-video w-full overflow-hidden shadow-inner md:aspect-[4/3] md:rounded-[20px]">
                 <Image
                   src="/images/vendas-temp/ad-3.png"
-                  alt="Visual da capa oficial usada na página de vendas do CNH de Primeira"
-                  width={1672}
-                  height={941}
-                  priority
-                  className="h-auto w-full object-cover"
+                  alt="Interface do CNH de Primeira"
+                  fill
+                  sizes="(max-width: 768px) 100vw, 50vw"
+                  className="object-cover"
                 />
+                <div className="absolute inset-0 ring-1 ring-inset ring-white/10" />
               </div>
-              <div className="grid grid-cols-3 gap-2 pt-3 text-center text-[11px] font-bold uppercase tracking-tight text-white/78">
-                <span className="rounded-xl bg-white/10 px-2 py-3">Diagnóstico</span>
-                <span className="rounded-xl bg-white/10 px-2 py-3">Questões</span>
-                <span className="rounded-xl bg-white/10 px-2 py-3">Plano</span>
+              
+              <div className="mt-5 flex items-center justify-between gap-2 px-5 md:mt-3 md:px-1">
+                {salesCopy.imageLabels.map((label) => (
+                  <span
+                    key={label}
+                    className="flex-1 rounded-xl bg-white/10 py-2.5 text-center text-[10px] font-black uppercase tracking-wider text-white backdrop-blur-md md:text-xs"
+                  >
+                    {label}
+                  </span>
+                ))}
               </div>
             </motion.div>
           </div>
