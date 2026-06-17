@@ -46,7 +46,7 @@ export function SalesHero() {
                 initial={{ opacity: 0, y: 22 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.65, delay: 0.12, ease: [0.16, 1, 0.3, 1] }}
-                className="-mx-5 mb-6 pb-5 md:hidden"
+                className="relative left-1/2 mb-6 w-screen -translate-x-1/2 pb-5 md:hidden"
               >
                 <div className="relative aspect-video w-full [mask-image:linear-gradient(to_bottom,transparent_0%,black_25%,black_100%)]">
                   <Image
