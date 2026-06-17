@@ -1,5 +1,9 @@
-import type { Metadata } from "next";
-import "./globals.css";
+import { Outfit } from "next/font/google";
+
+const outfit = Outfit({
+  subsets: ["latin"],
+  display: "swap",
+});
 
 export const metadata: Metadata = {
   title: "CNH de Primeira",
@@ -14,7 +18,7 @@ export default function RootLayout({
   return (
     <html
       lang="pt-BR"
-      className="h-full overflow-x-hidden antialiased"
+      className={`h-full overflow-x-hidden antialiased ${outfit.className}`}
     >
       <body className="min-h-full flex flex-col overflow-x-hidden">{children}</body>
     </html>
