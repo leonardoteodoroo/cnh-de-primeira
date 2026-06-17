@@ -39,7 +39,7 @@ const data = read("src/components/sales-page/data.ts");
 const requiredCopy = [
   "A CNH mudou. O jeito de estudar também.",
   "O gratuito te entrega conteúdo. O curso preparatório para a prova da CNH te entrega direção.",
-  "Não é estudar mais. É estudar com direção.",
+  "Não é estudar mais. É estudar CERTO!",
   "Método Raio-X CNH",
   "Anderson Mageski",
   "não prometemos questão vazada",

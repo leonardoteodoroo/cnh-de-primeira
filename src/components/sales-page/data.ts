@@ -20,7 +20,7 @@ export const salesCopy = {
     "O gratuito te entrega conteúdo. O curso preparatório para a prova da CNH te entrega direção. Faça um diagnóstico, veja onde você ainda erra e siga um plano simples antes de encarar a prova teórica.",
   primaryCta: "Quero estudar com direção",
   secondaryCta: "Ver o que recebo",
-  diagnosticTitle: "Não é estudar mais. É estudar com direção.",
+  diagnosticTitle: "Não é estudar mais. É estudar CERTO!",
   diagnosticBody:
     "Você pode assistir aula, fazer simulado, salvar vídeo e ainda assim chegar na prova sem saber se está pronto. Não por falta de esforço. Por falta de sequência.",
   methodName: "Método Raio-X CNH",

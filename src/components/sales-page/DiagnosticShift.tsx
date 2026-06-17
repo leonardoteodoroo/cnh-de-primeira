@@ -4,7 +4,7 @@ export function DiagnosticShift() {
   return (
     <section className="bg-white px-5 py-16 md:px-8 md:py-24">
       <div className="mx-auto max-w-6xl">
-        <div className="grid gap-10 md:grid-cols-[0.9fr_1.1fr] md:items-end">
+        <div className="grid gap-10 text-center md:grid-cols-[0.9fr_1.1fr] md:items-end md:text-left">
           <div>
 
             <h2 className="text-3xl font-black leading-tight tracking-tight text-zinc-950 md:text-5xl">
