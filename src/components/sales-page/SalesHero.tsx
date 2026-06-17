@@ -22,13 +22,6 @@ export function SalesHero() {
       </div>
 
       <div className="relative mx-auto flex min-h-dvh max-w-6xl flex-col px-5 py-6 md:px-8">
-        <nav className="flex items-center justify-between gap-4 text-xs font-bold uppercase tracking-[0.18em] text-white/70">
-          <Link href="/step-09-estudar-certo" className="hover:text-white">
-            Voltar
-          </Link>
-          <span>CNH de Primeira</span>
-        </nav>
-
         <div className="flex flex-1 items-center py-14 md:py-20">
           <div className="grid w-full items-center gap-10 md:grid-cols-[1.04fr_0.78fr]">
             <motion.div
@@ -60,7 +53,7 @@ export function SalesHero() {
                   <ArrowRight size={18} />
                 </Link>
                 <Link
-                  href="#mural-do-amor"
+                  href="#oferta"
                   className="inline-flex min-h-14 items-center justify-center gap-2 rounded-full border border-white/18 bg-white/10 px-6 text-sm font-bold text-white backdrop-blur transition hover:bg-white/16"
                 >
                   {salesCopy.secondaryCta}
