@@ -1,1 +1,5 @@
-import Step10SalesPage from "./step-10-sales-page/page";\n\nexport default function Home() {\n  return <Step10SalesPage />;\n}
+import Step01Hero from "./step-01-hero/page";
+
+export default function Home() {
+  return <Step01Hero />;
+}
