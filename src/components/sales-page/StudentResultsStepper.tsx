@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import { motion } from "framer-motion";
 import { CheckCircle2 } from "lucide-react";
 import { methodSteps, resultMetrics, studentCards } from "./data";
@@ -78,6 +79,15 @@ export function StudentResultsStepper() {
         </div>
 
         <div className="mt-16 overflow-hidden">
+          <div className="mx-auto mb-16 max-w-4xl overflow-hidden rounded-[28px] shadow-2xl ring-1 ring-zinc-200/50">
+            <Image
+              src="/images/hero-16-9-2.jpeg"
+              alt="Milhares de alunos com mais clareza"
+              width={1600}
+              height={900}
+              className="aspect-[16/9] w-full object-cover"
+            />
+          </div>
           <h3 className="mb-6 text-center text-sm font-black uppercase tracking-[0.18em] text-zinc-400">
             Milhares de alunos com mais clareza
           </h3>
