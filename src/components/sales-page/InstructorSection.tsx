@@ -7,7 +7,7 @@ export function InstructorSection() {
   return (
     <section className="bg-black px-5 py-16 text-white md:px-8 md:py-24">
       <ScrollReveal className="mx-auto grid max-w-6xl gap-10 md:grid-cols-[0.82fr_1fr] md:items-center">
-        <div className="relative">
+        <div className="relative -mx-5 md:mx-0">
           <Image
             src="/images/vendas-temp/instrutor-anderson.jpeg"
             alt="Anderson Mageski, instrutor do CNH de Primeira, em foto editorial durante apresentação"
