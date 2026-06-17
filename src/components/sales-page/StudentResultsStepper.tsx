@@ -79,7 +79,7 @@ export function StudentResultsStepper() {
         </div>
 
         <div className="mt-16 overflow-hidden">
-          <div className="mx-auto mb-16 max-w-4xl overflow-hidden rounded-[28px] shadow-2xl ring-1 ring-zinc-200/50">
+          <div className="-mx-5 mb-16 overflow-hidden md:mx-auto md:max-w-5xl md:rounded-[28px] md:shadow-2xl md:ring-1 md:ring-zinc-200/50">
             <Image
               src="/images/hero-16-9-2.jpeg"
               alt="Milhares de alunos com mais clareza"
