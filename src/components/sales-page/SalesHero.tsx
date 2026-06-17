@@ -28,18 +28,18 @@ export function SalesHero() {
           <div className="grid w-full items-center gap-12 md:grid-cols-2 md:gap-16">
             
             <div className="flex flex-col">
-              <div className="mb-6 inline-flex items-center gap-2 self-start rounded-full border border-yellow-500/30 bg-yellow-500/10 px-3 py-1.5 text-[10px] font-black tracking-widest text-yellow-500 uppercase md:mb-8 md:px-4 md:py-2 md:text-xs">
+              <h1 className="mb-6 inline-flex items-center gap-2 self-start rounded-full border border-yellow-500/30 bg-yellow-500/10 px-3 py-1.5 text-[10px] font-black tracking-widest text-yellow-500 uppercase md:mb-8 md:px-4 md:py-2 md:text-xs">
                 <ShieldCheck size={14} className="text-yellow-500" />
                 {salesCopy.heroEyebrow}
-              </div>
+              </h1>
 
-              {/* Título oculto no mobile, visível no desktop. Mantido para SEO. */}
-              <h1 className="sr-only md:not-sr-only md:max-w-[860px] md:text-[84px] md:font-extrabold md:leading-[1.05] md:tracking-tight">
+              {/* Hook principal da copy. Rebaixado para H2 para permitir que o Eyebrow (rico em palavras-chave) seja o H1 de SEO. */}
+              <h2 className="sr-only md:not-sr-only md:max-w-[860px] md:text-[84px] md:font-extrabold md:leading-[1.05] md:tracking-tight">
                 <span className="mb-2 block text-white/80 md:text-[68px]">
                   A CNH mudou.
                 </span>
                 <span className="block text-white">O jeito de estudar também.</span>
-              </h1>
+              </h2>
 
               {/* MOBILE IMAGE BLOCK (Substitui o título) */}
               <motion.div
