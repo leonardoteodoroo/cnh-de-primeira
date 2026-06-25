@@ -11,11 +11,11 @@ export function SalesHero() {
     <section className="relative overflow-hidden bg-[oklch(0.13_0.015_85)] text-white">
       <div className="absolute inset-0 h-full w-full">
         <picture className="absolute inset-0 block h-full w-full">
-          <source media="(min-width: 768px)" srcSet="/images/vendas-temp/hero-desktop.jpeg" />
+          <source media="(min-width: 768px)" srcSet="/images/vendas-temp/hero-desktop.webp" />
           <img
-            src="/images/vendas-temp/hero-mobile.jpeg"
-            alt="Capa do método CNH de Primeira"
-            loading="eager"
+            src="/images/vendas-temp/hero-mobile.webp"
+            alt="Aluno sorridente com sua permissão para dirigir na mão comprovando que é possível passar de primeira no Detran sem aulas extras"
+            fetchPriority="high"
             decoding="sync"
             className="h-full w-full scale-[1.12] object-cover object-center md:scale-100"
           />
@@ -39,11 +39,14 @@ export function SalesHero() {
               </h1>
 
               {/* Hook principal da copy. Rebaixado para H2 para permitir que o Eyebrow (rico em palavras-chave) seja o H1 de SEO. */}
-              <h2 className="sr-only md:not-sr-only md:max-w-[860px] md:text-[84px] md:font-extrabold md:leading-[1.05] md:tracking-tight">
-                <span className="mb-2 block text-white/80 md:text-[68px]">
+              <h2 className="max-w-[860px] text-[32px] font-extrabold leading-[1.1] tracking-tight sm:text-[42px] md:text-[84px] md:leading-[1.05]">
+                {/* 
+                <span className="mb-1 block text-white/80 md:mb-2 md:text-[68px]">
                   A CNH mudou.
                 </span>
-                <span className="block text-white">O jeito de estudar também.</span>
+                <span className="md:ml-2 text-zinc-400">Pelo celular, PC ou Tablet</span>
+                */}
+                <span className="block text-white">Trânsito Sem Segredos</span>
               </h2>
 
               {/* MOBILE IMAGE BLOCK (Substitui o título) */}
@@ -55,10 +58,11 @@ export function SalesHero() {
               >
                 <div className="relative aspect-video w-full [mask-image:linear-gradient(to_bottom,transparent_0%,black_25%,black_100%)]">
                   <Image
-                    src="/images/vendas-temp/ad-3.png"
-                    alt="Interface do CNH de Primeira"
+                    src="/images/vendas-temp/hero-custom.webp"
+                    alt="Instrutor guiando passo a passo na plataforma digital"
                     fill
                     sizes="100vw"
+                    loading="lazy"
                     className="object-cover"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/0 to-transparent" />
@@ -80,19 +84,13 @@ export function SalesHero() {
                 {salesCopy.heroBody}
               </p>
 
-              <div className="mt-8 flex flex-col gap-4 md:mt-10 md:flex-row md:items-center">
+              <div className="mt-8 flex justify-center md:mt-10 md:justify-start">
                 <Link
-                  href="#oferta"
+                  href="#modulos"
                   className="group relative inline-flex items-center justify-center gap-3 rounded-full bg-yellow-500 px-8 py-4 text-sm font-black text-zinc-950 transition-all hover:bg-yellow-400 hover:scale-[1.02] active:scale-[0.98] md:px-10 md:py-5 md:text-base"
                 >
                   {salesCopy.primaryCta}
                   <ArrowRight size={18} className="transition-transform group-hover:translate-x-1" />
-                </Link>
-                <Link
-                  href="#oferta"
-                  className="inline-flex items-center justify-center rounded-full border border-white/20 bg-white/5 px-8 py-4 text-sm font-bold text-white transition-colors hover:bg-white/10 md:px-10 md:py-5 md:text-base"
-                >
-                  {salesCopy.secondaryCta}
                 </Link>
               </div>
             </motion.div>
@@ -106,11 +104,12 @@ export function SalesHero() {
             >
               <div className="relative aspect-[4/3] w-full overflow-hidden rounded-[20px] shadow-inner">
                 <Image
-                  src="/images/vendas-temp/ad-3.png"
-                  alt="Interface do CNH de Primeira"
+                  src="/images/vendas-temp/hero-custom.webp"
+                  alt="Interface intuitiva do treinamento"
                   fill
-                  sizes="50vw"
-                  className="object-cover"
+                  sizes="(min-width: 768px) 50vw, 100vw"
+                  loading="lazy"
+                  className="object-cover transition-transform duration-700 hover:scale-105"
                 />
                 <div className="absolute inset-0 ring-1 ring-inset ring-white/10" />
               </div>

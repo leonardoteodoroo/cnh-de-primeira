@@ -8,12 +8,22 @@ export function InstructorSection() {
     <section className="bg-black px-5 py-16 text-white md:px-8 md:py-24">
       <ScrollReveal className="mx-auto grid max-w-6xl gap-10 md:grid-cols-[0.82fr_1fr] md:items-center">
         <div className="relative -mx-5 md:mx-0">
-          <Image
-            src="/images/vendas-temp/instrutor-anderson.jpeg"
-            alt="Anderson Mageski, instrutor do CNH de Primeira, em foto editorial durante apresentação"
+          {/* <Image
+            src="/images/vendas-temp/instrutor-anderson.webp"
+            alt="O especialista e instrutor de trânsito Anderson posando em frente ao carro de autoescola com postura de autoridade"
             width={1792}
             height={2400}
             sizes="(min-width: 768px) 42vw, 100vw"
+            loading="lazy"
+            className="aspect-[4/5] w-full object-cover object-[50%_20%] [mask-image:linear-gradient(to_bottom,black_85%,transparent_100%)]"
+          /> */}
+          <Image
+            src="/images/vendas-temp/instrutor-anderson-v2.webp"
+            alt="Retrato de perto do instrutor especialista Anderson focado em ajudar novos motoristas"
+            width={1792}
+            height={2400}
+            sizes="(min-width: 768px) 42vw, 100vw"
+            loading="lazy"
             className="aspect-[4/5] w-full object-cover object-[50%_20%] [mask-image:linear-gradient(to_bottom,black_85%,transparent_100%)]"
           />
           <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/75 to-transparent p-6">
@@ -25,19 +35,32 @@ export function InstructorSection() {
         </div>
 
         <div>
-          <p className="mb-3 text-xs font-black uppercase tracking-[0.18em] text-yellow-300">
-            Quem guia o plano
+          <p className="font-mono text-sm font-bold tracking-widest text-yellow-500 uppercase">
+            SEU INSTRUTOR E GUIA
           </p>
           <h2 className="text-3xl font-black leading-tight tracking-tight md:text-5xl">
-            Um professor para organizar o que a internet deixa solto.
+            A internet está cheia de dicas. E esse pode ser exatamente o seu problema.
           </h2>
-          <p className="mt-5 text-lg leading-relaxed text-white/72">{salesCopy.instructorBody}</p>
+          <div className="mt-5 space-y-4 text-lg leading-relaxed text-white/72">
+            <p>
+              Você encontra centenas de vídeos, resumos e macetes, mas as informações estão espalhadas e, muitas vezes, sem qualquer critério. No fim, acaba estudando conteúdos que quase nunca aparecem na prova e deixando de lado as pegadinhas que eliminam milhares de candidatos.
+            </p>
+            <p>
+              Foi por isso que eu fiz esse trabalho por você.
+            </p>
+            <p>
+              Analisei, filtrei e organizei os simulados com base no que os Detrans realmente cobram atualmente. Sem excesso de conteúdo e sem decoreba interminável.
+            </p>
+            <p>
+              Aqui, você aprende a identificar a lógica da prova, entende as armadilhas mais comuns, treina com questões alinhadas ao padrão oficial e chega ao exame com mais confiança, clareza e preparo para conquistar sua aprovação.
+            </p>
+          </div>
 
           <div className="mt-8 grid gap-3">
             {[
-              { icon: GraduationCap, text: salesCopy.instructorRole },
-              { icon: Award, text: "Aulas diretas para revisão e treino de prova teórica" },
-              { icon: ShieldCheck, text: "Preparação complementar, sem promessa absoluta" },
+              { icon: GraduationCap, text: "Explicações detalhadas e dicas práticas que te salvam na hora H" },
+              { icon: Award, text: "Simulados para você se familiarizar com o estilo de perguntas oficial" },
+              { icon: ShieldCheck, text: "Aulas de revisão direto ao ponto, no seu ritmo, quantas vezes quiser" },
             ].map((item) => {
               const Icon = item.icon;
               return (

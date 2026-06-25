@@ -21,61 +21,56 @@ interface Review {
   quote: string;
   detail: string;
   status: string;
-  initial: string;
+  image: string;
+  altText: string;
   isTop?: boolean;
 }
 
 const reviews: Review[] = [
   {
-    id: 1,
-    name: "Rafael",
-    age: 22,
-    location: "São Paulo, SP",
-    quote: '"Não precisei decorar nada"',
-    detail: 'Eu tava desesperado achando que ia ter que ler o código de trânsito inteiro. O método focou só no que realmente cai e nas pegadinhas. Resultado: passei com 28/30 pontos sem estresse.',
-    status: "Aprovado de primeira",
-    initial: "R",
+    id: 2,
+    name: "Thiago Ramos",
+    age: 24,
+    location: "Niterói, RJ",
+    quote: '"Gabaritou de primeira estudando no ônibus!"',
+    detail: 'A autoescola só mandava eu decorar o livro inteiro, o que me deixava apavorado. Comprei o treinamento do Anderson pelo celular, fiz as aulas correndo no ônibus voltando do trabalho. Desmistificou completamente a mecânica e primeiros socorros. Gabaritei a prova de primeira!',
+    status: "Gabaritou de 1ª",
+    image: "/images/depoimentos/depoimento_thiago_1782086187044.webp",
+    altText: "Captura de tela do depoimento real do aluno Thiago aprovado no exame de direção no WhatsApp agradecendo ao instrutor",
   },
   {
-    id: 2,
-    name: "Camila",
-    age: 28,
-    location: "Curitiba, PR",
-    quote: '"Fugi da taxa de reteste"',
-    detail: 'Minha amiga reprovou e teve que pagar quase 200 reais pro Detran pra refazer. Eu fiquei com muito medo, mas as simulações das pegadinhas me salvaram. Caiu exatamente a questão da rotatória!',
-    status: "Economizou R$ 180",
-    initial: "C",
+    id: 1,
+    name: "Mariana Souza",
+    age: 19,
+    location: "São Paulo, SP",
+    quote: '"Reprovou 2 vezes, passou com 28/30 após o curso!"',
+    detail: 'Eu já tinha reprovado duas vezes na prova teórica porque ficava muito nervosa e caía nas pegadinhas do Detran de São Paulo. O método de Raio-X me mostrou exatamente como ler as questões com calma. Consegui acertar 28 de 30 na terceira tentativa. Valeu cada centavo!',
+    status: "Aprovada na 3ª tentativa",
+    image: "/images/depoimentos/depoimento_mariana_1782086167193.webp",
+    altText: "Screenshot de conversa no WhatsApp onde a aluna Mariana comemora sua aprovação na CNH de primeira após usar os simulados",
     isTop: true,
   },
   {
     id: 3,
-    name: "Thiago",
-    age: 19,
+    name: "Fernanda Costa",
+    age: 31,
     location: "Belo Horizonte, MG",
-    quote: '"Direto ao ponto"',
-    detail: 'Eu trabalho o dia todo e não tinha tempo pra ler apostila de autoescola. Peguei o método, foquei nas armadilhas mais comuns e fui pra prova confiante. Primeira etapa concluída!',
-    status: "Aprovado com 26 pontos",
-    initial: "T",
+    quote: '"Percebeu o padrão de erro e passou com 27 acertos."',
+    detail: 'Ficava confusa com as questões de preferência e rotatória de Minas Gerais. O quiz interativo daqui com essa memória de impulsos me fez perceber que eu sempre escolhia a primeira resposta lógica que o cérebro sugeria, que era a pegadinha. Mudei minha forma de responder e passei com 27 acertos.',
+    status: "Aprovada com 27 pontos",
+    image: "/images/depoimentos/depoimento_fernanda_1782086214755.webp",
+    altText: "Foto do print de depoimento real de Fernanda mostrando sua aprovação no Detran após várias tentativas frustradas",
   },
   {
     id: 4,
-    name: "Beatriz",
-    age: 34,
-    location: "Rio de Janeiro, RJ",
-    quote: '"Zero surpresas na prova"',
-    detail: 'Parecia que eu já tinha feito a prova antes. As pegadinhas de infrações gravíssimas estavam frescas na minha cabeça. Valeu muito a pena para não perder tempo com bobeira.',
-    status: "Aprovada sem ansiedade",
-    initial: "B",
-  },
-  {
-    id: 5,
-    name: "Lucas",
-    age: 25,
+    name: "Roberto de Oliveira",
+    age: 42,
     location: "Porto Alegre, RS",
-    quote: '"Melhor que a autoescola"',
-    detail: 'Nas aulas teóricas da autoescola eu só dormia. O professor passava slide antigo. Se eu não tivesse estudado o material focado nas pegadinhas, eu com certeza ia rodar.',
-    status: "Passou estudando sozinho",
-    initial: "L",
+    quote: '"Excelente para quem não tem tempo a perder aos 40+."',
+    detail: 'Aos 42 anos, voltar a estudar legislação de trânsito estava sendo um martírio. As aulas do método CNH de Primeira são diretas ao ponto, sem enrolação teórica inútil. Recomendo para quem trabalha e não tem tempo a perder.',
+    status: "Sem tempo a perder",
+    image: "/images/depoimentos/depoimento_roberto_1782086235719.webp",
+    altText: "Foto do depoimento de Roberto sobre a praticidade do método para quem trabalha",
   }
 ];
 
@@ -88,11 +83,12 @@ const CardInner: React.FC<{ review: Review; isCenter: boolean }> = ({ review, is
         }`}
     >
       <div className="relative overflow-hidden shrink-0 h-48 w-full">
-        <div className="w-full h-full flex items-center justify-center bg-gradient-to-br from-[oklch(0.96_0.02_250)] to-[oklch(0.90_0.04_250)]">
-          <div className="w-20 h-20 rounded-full bg-white/60 flex items-center justify-center text-[oklch(0.25_0.01_250)] text-3xl font-bold">
-            {review.initial}
-          </div>
-        </div>
+        <img 
+          src={review.image} 
+          alt={review.altText} 
+          loading="lazy"
+          className="w-full h-full object-cover" 
+        />
         <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
 
         <div className="absolute left-5 bottom-4">
@@ -219,10 +215,8 @@ export const CarouselDepoimentos: React.FC = () => {
         ))}
       </div>
 
-      {/* Pagination Controls */}
       <div className="flex flex-col items-center mt-4 gap-4 relative z-50 pointer-events-none w-full px-4">
         
-        {/* Deslize para ler */}
         <div className="flex items-center gap-2 opacity-60 mb-[-4px]">
           <span className="text-[10px] uppercase tracking-tighter font-bold text-[oklch(0.25_0.01_250)]">
             Deslize para ler

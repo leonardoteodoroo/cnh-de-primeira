@@ -20,11 +20,11 @@ export default function Step06Detran() {
           className="w-full aspect-video relative overflow-hidden"
         >
           <Image
-            src="/images/detran-profit.png"
-            alt="Ilustração sobre o lucro sombrio das taxas de reteste do Detran"
+            src="/images/detran-profit.webp"
+            alt="Gráfico ilustrativo revelando os lucros milionários do Detran baseados em altas taxas de reprovação de candidatos à CNH"
             fill
+            loading="lazy"
             className="object-cover"
-            priority
           />
         </motion.div>
 

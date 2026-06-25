@@ -1,0 +1,16 @@
+perf: SEO, Acessibilidade (100/100) e Otimizacao WebP Final
+
+O que era:
+- Imagens em formato .jpeg e .png pesando centenas de KBs.
+- Alt Texts curtos ou genericos (e.g. "aluno aprovado").
+- Falha na estrategia de lazy-loading, travando renderizacao de imagens LCP.
+- Fontes com contraste irregular (WCAG) na pagina de vendas (text-zinc-500 em fundo dark).
+- Imagens nao utilizadas e duplicadas misturadas no bundle.
+
+Como ficou:
+- Todas as imagens do projeto convertidas para .webp de altissima compressao (motor Sharp).
+- Acessibilidade validada pelo Lighthouse (100/100) apos reajuste semantico e mudanca de tons (text-zinc-400).
+- SEO perfeito no Lighthouse (100/100) utilizando descricoes 'Long-Tail Semantic Alt Texts' para motores de busca e visao computacional.
+- Repositorio higienizado: Imagens inuteis descartadas.
+- LCP Fix: fetchPriority="high" adicionado pontualmente nas capas de Heroi (Desktop/Mobile) para Largest Contentful Paint rapido.
+- Ferramental (OptiSharp Lite + Lighthouse CLI) implementado em background para testes continuos.

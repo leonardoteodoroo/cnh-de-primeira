@@ -1,0 +1,10 @@
+User-agent: *
+Allow: /
+Disallow: /_next/
+Disallow: /api/
+
+# Sitemap
+Sitemap: https://cnh-de-primeira.semprenamoda.com.br/sitemap.xml
+
+# LLMs
+# Veja também: /llms.txt e /llms-full.txt

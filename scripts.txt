@@ -1,0 +1,378 @@
+/* ================================================================
+   APPS SCRIPT — CNH de Primeira — Tracker de Funil
+   ================================================================
+   
+   COMO USAR:
+   1. Crie uma planilha nova no Google Sheets
+   2. Extensões → Apps Script
+   3. Apague o código padrão e cole TUDO abaixo
+   4. Salve (Ctrl+S)
+   5. Implantar → Nova implantação
+      - Tipo: App da Web
+      - Executar como: Eu (seu email)
+      - Quem tem acesso: Qualquer pessoa
+   6. Copie a URL gerada — ela é o WEBHOOK_URL do projeto
+   7. Feche e reabra a planilha para ver o menu "⚡ CNH Tracker"
+   8. Clique em "✅ Verificar estrutura" para criar os cabeçalhos
+   
+   ARQUITETURA:
+   - Cada visitante = 1 LINHA (identificado pelo visitor_id)
+   - Cada step do funil = 1 COLUNA (preenchida com timestamp)
+   - Quando chega evento de um visitor_id existente → atualiza a linha
+   - Quando chega evento de visitor_id novo → cria nova linha
+   
+   ================================================================ */
+
+
+// ── CONFIGURAÇÃO ──────────────────────────────────────────────
+
+var SHEET_NAME = 'Funil';
+
+// Colunas organizadas por zona
+var HEADERS = [
+  // ── ZONA 1: Identificação (azul) ──
+  'visitor_id',           // A  — chave primária
+  'gclid',                // B  — Google Ads click ID
+  'gbraid',               // C  — Google Ads (iOS)
+  'wbraid',               // D  — Google Ads (web)
+  'fbclid',               // E  — Meta Ads click ID
+  'fbc',                  // F  — cookie _fbc do Meta Pixel
+  'fbp',                  // G  — cookie _fbp do Meta Pixel
+  
+  // ── ZONA 2: Sessão (cinza) ──
+  'first_seen',           // H  — timestamp ISO da primeira visita
+  'hora_brasilia',        // I  — horário legível BRT
+  'user_agent',           // J
+  'screen',               // K
+  'language',             // L
+  
+  // ── ZONA 3: Funil — cada célula recebe timestamp quando o evento chega (verde) ──
+  'hero',                 // M  — step-01
+  'pergunta_01',          // N  — step-02
+  'pergunta_02',          // O  — step-03
+  'pergunta_03',          // P  — step-04
+  'pergunta_04',          // Q  — step-05
+  'detran',               // R  — step-06
+  'conta',                // S  — step-07
+  'depoimentos',          // T  — step-08
+  'estudar_certo',        // U  — step-09
+  'sales_page',           // V  — step-10
+  'exit_popup',           // W  — popup de intenção de saída
+  'checkout_click',       // X  — clicou no botão de compra (InitiateCheckout)
+  'obrigado',             // Y  — página de obrigado (compra realizada)
+  
+  // ── ZONA 4: Status (amarelo) ──
+  'last_event',           // Z  — nome do último evento recebido
+  'last_updated'          // AA  — timestamp da última atualização
+];
+
+// Mapeamento: event_type → nome da coluna no header
+var EVENT_TO_COLUMN = {
+  'hero':            'hero',
+  'pergunta_01':     'pergunta_01',
+  'pergunta_02':     'pergunta_02',
+  'pergunta_03':     'pergunta_03',
+  'pergunta_04':     'pergunta_04',
+  'detran':          'detran',
+  'conta':           'conta',
+  'depoimentos':     'depoimentos',
+  'estudar_certo':   'estudar_certo',
+  'sales_page':      'sales_page',
+  'exit_popup':      'exit_popup',
+  'checkout_click':  'checkout_click',
+  'obrigado':        'obrigado'
+};
+
+// Cores por zona
+var COR_ZONA_ID     = '#1565c0';  // Azul
+var COR_ZONA_SESSAO = '#455a64';  // Cinza escuro
+var COR_ZONA_FUNIL  = '#2e7d32';  // Verde
+var COR_ZONA_STATUS = '#f9a825';  // Amarelo
+
+
+// ── UTILITÁRIOS ───────────────────────────────────────────────
+
+function horasBrasilia(timestamp) {
+  if (!timestamp) return '';
+  try {
+    var d = new Date(timestamp);
+    if (isNaN(d.getTime())) return '';
+    return Utilities.formatDate(d, 'America/Sao_Paulo', 'dd/MM/yyyy HH:mm:ss');
+  } catch (e) { return ''; }
+}
+
+function horasBrasiliaCompacta(timestamp) {
+  if (!timestamp) return '';
+  try {
+    var d = new Date(timestamp);
+    if (isNaN(d.getTime())) return '';
+    return Utilities.formatDate(d, 'America/Sao_Paulo', 'HH:mm:ss');
+  } catch (e) { return ''; }
+}
+
+
+// ── FORMATAR ABA ──────────────────────────────────────────────
+
+function formatarAba(sheet) {
+  var tudo = sheet.getRange(1, 1, sheet.getMaxRows(), sheet.getMaxColumns());
+  tudo.setHorizontalAlignment('left');
+  tudo.setVerticalAlignment('middle');
+  tudo.setWrapStrategy(SpreadsheetApp.WrapStrategy.CLIP);
+  sheet.setFrozenRows(1);
+}
+
+function colorirHeaders(sheet) {
+  var numCols = HEADERS.length;
+  var headerRange = sheet.getRange(1, 1, 1, numCols);
+  headerRange.setFontWeight('bold');
+  headerRange.setFontColor('white');
+  headerRange.setFontSize(9);
+  
+  // Zona 1: Identificação (colunas A-G = 1-7)
+  sheet.getRange(1, 1, 1, 7).setBackground(COR_ZONA_ID);
+  
+  // Zona 2: Sessão (colunas H-L = 8-12)
+  sheet.getRange(1, 8, 1, 5).setBackground(COR_ZONA_SESSAO);
+  
+  // Zona 3: Funil (colunas M-Y = 13-25)
+  sheet.getRange(1, 13, 1, 13).setBackground(COR_ZONA_FUNIL);
+  
+  // Zona 4: Status (colunas Z-AA = 26-27)
+  sheet.getRange(1, 26, 1, 2).setBackground(COR_ZONA_STATUS);
+  sheet.getRange(1, 26, 1, 2).setFontColor('#000000');
+}
+
+
+// ── GARANTIR ESTRUTURA ────────────────────────────────────────
+
+function garantirAba(planilha) {
+  var sheet = planilha.getSheetByName(SHEET_NAME);
+  if (!sheet) {
+    sheet = planilha.insertSheet(SHEET_NAME);
+  }
+  
+  if (sheet.getLastRow() === 0) {
+    sheet.getRange(1, 1, 1, HEADERS.length).setValues([HEADERS]);
+    colorirHeaders(sheet);
+    formatarAba(sheet);
+  }
+  
+  return sheet;
+}
+
+
+// ── ENCONTRAR LINHA DO VISITOR ────────────────────────────────
+
+/**
+ * Busca a linha (1-indexed) que contém o visitor_id.
+ * Retorna -1 se não encontrar.
+ */
+function encontrarLinhaDoVisitor(sheet, visitorId) {
+  if (!visitorId || sheet.getLastRow() < 2) return -1;
+  
+  var colVisitor = 1; // Coluna A = visitor_id
+  var dados = sheet.getRange(2, colVisitor, sheet.getLastRow() - 1, 1).getValues();
+  
+  for (var i = 0; i < dados.length; i++) {
+    if (String(dados[i][0]).trim() === visitorId) {
+      return i + 2; // +2 porque começa na linha 2 (header é 1)
+    }
+  }
+  return -1;
+}
+
+/**
+ * Retorna o índice da coluna (1-indexed) para um header.
+ */
+function getColIndex(headerName) {
+  var idx = HEADERS.indexOf(headerName);
+  return idx >= 0 ? idx + 1 : -1;
+}
+
+
+// ── WEBHOOK: doPost ───────────────────────────────────────────
+
+function doPost(e) {
+  var lock = LockService.getScriptLock();
+  try {
+    // Aguarda até 10 segundos para obter exclusividade de gravação
+    lock.waitLock(10000);
+
+    var data = JSON.parse(e.postData.contents || '{}');
+    var planilha = SpreadsheetApp.getActiveSpreadsheet();
+    var sheet = garantirAba(planilha);
+    
+    var visitorId = String(data.visitor_id || '').trim();
+    if (!visitorId) {
+      return resposta({ status: 'error', message: 'visitor_id obrigatório' });
+    }
+    
+    var eventType = String(data.event_type || '').trim();
+    var ts = data.timestamp || new Date().toISOString();
+    var horaBR = horasBrasiliaCompacta(ts);
+    
+    // ── Busca linha existente ──
+    var linhaExistente = encontrarLinhaDoVisitor(sheet, visitorId);
+    
+    if (linhaExistente > 0) {
+      // ── USUÁRIO JÁ EXISTE → Atualiza a coluna do step ──
+      
+      // Atualiza coluna do evento (se for um step válido)
+      var colEvento = EVENT_TO_COLUMN[eventType];
+      if (colEvento) {
+        var colIdx = getColIndex(colEvento);
+        if (colIdx > 0) {
+          // Só preenche se estiver vazia (não sobrescrever revisita)
+          var valorAtual = sheet.getRange(linhaExistente, colIdx).getValue();
+          if (!valorAtual) {
+            sheet.getRange(linhaExistente, colIdx).setValue(horaBR);
+          }
+        }
+      }
+      
+      // Atualiza IDs se vieram e a célula está vazia (enriquecimento)
+      atualizarSeCelulaVazia(sheet, linhaExistente, 'gclid',  data.gclid);
+      atualizarSeCelulaVazia(sheet, linhaExistente, 'gbraid', data.gbraid);
+      atualizarSeCelulaVazia(sheet, linhaExistente, 'wbraid', data.wbraid);
+      atualizarSeCelulaVazia(sheet, linhaExistente, 'fbclid', data.fbclid);
+      atualizarSeCelulaVazia(sheet, linhaExistente, 'fbc',    data.fbc);
+      atualizarSeCelulaVazia(sheet, linhaExistente, 'fbp',    data.fbp);
+      
+      // Atualiza status (sempre sobrescreve)
+      var colLastEvent   = getColIndex('last_event');
+      var colLastUpdated = getColIndex('last_updated');
+      if (colLastEvent > 0)   sheet.getRange(linhaExistente, colLastEvent).setValue(eventType);
+      if (colLastUpdated > 0) sheet.getRange(linhaExistente, colLastUpdated).setValue(horaBR);
+      
+    } else {
+      // ── USUÁRIO NOVO → Cria linha completa ──
+      
+      var novaLinha = [];
+      for (var i = 0; i < HEADERS.length; i++) {
+        novaLinha.push('');
+      }
+      
+      // Zona 1: Identificação
+      novaLinha[getColIndex('visitor_id') - 1] = visitorId;
+      novaLinha[getColIndex('gclid')      - 1] = data.gclid   || '';
+      novaLinha[getColIndex('gbraid')     - 1] = data.gbraid  || '';
+      novaLinha[getColIndex('wbraid')     - 1] = data.wbraid  || '';
+      novaLinha[getColIndex('fbclid')     - 1] = data.fbclid  || '';
+      novaLinha[getColIndex('fbc')        - 1] = data.fbc     || '';
+      novaLinha[getColIndex('fbp')        - 1] = data.fbp     || '';
+      
+      // Zona 2: Sessão
+      novaLinha[getColIndex('first_seen')     - 1] = ts;
+      novaLinha[getColIndex('hora_brasilia')  - 1] = horasBrasilia(ts);
+      novaLinha[getColIndex('user_agent')     - 1] = data.user_agent || '';
+      novaLinha[getColIndex('screen')         - 1] = data.screen     || '';
+      novaLinha[getColIndex('language')       - 1] = data.language   || '';
+      
+      // Zona 3: Preenche o step do evento atual
+      var colEvento2 = EVENT_TO_COLUMN[eventType];
+      if (colEvento2) {
+        var colIdx2 = getColIndex(colEvento2);
+        if (colIdx2 > 0) {
+          novaLinha[colIdx2 - 1] = horaBR;
+        }
+      }
+      
+      // Zona 4: Status
+      novaLinha[getColIndex('last_event')   - 1] = eventType;
+      novaLinha[getColIndex('last_updated') - 1] = horaBR;
+      
+      sheet.appendRow(novaLinha);
+    }
+    
+    return resposta({ status: 'ok', visitor_id: visitorId, event: eventType });
+    
+  } catch (err) {
+    return resposta({ status: 'error', message: err.toString() });
+  } finally {
+    lock.releaseLock();
+  }
+}
+
+
+// ── Helpers do doPost ─────────────────────────────────────────
+
+function atualizarSeCelulaVazia(sheet, linha, headerName, valor) {
+  if (!valor) return;
+  var col = getColIndex(headerName);
+  if (col < 0) return;
+  var atual = sheet.getRange(linha, col).getValue();
+  if (!atual) {
+    sheet.getRange(linha, col).setValue(valor);
+  }
+}
+
+function resposta(obj) {
+  return ContentService
+    .createTextOutput(JSON.stringify(obj))
+    .setMimeType(ContentService.MimeType.JSON);
+}
+
+
+// ── WEBHOOK: doGet ────────────────────────────────────────────
+
+function doGet() {
+  return ContentService
+    .createTextOutput(JSON.stringify({
+      status: 'ok',
+      message: 'CNH Tracker webhook ativo!',
+      sheet: SHEET_NAME,
+      headers: HEADERS.length + ' colunas'
+    }))
+    .setMimeType(ContentService.MimeType.JSON);
+}
+
+
+// ── VERIFICAR ESTRUTURA ───────────────────────────────────────
+
+function verificarEstrutura() {
+  var planilha = SpreadsheetApp.getActiveSpreadsheet();
+  var sheet = garantirAba(planilha);
+  
+  // Verifica se os headers estão corretos
+  var headersAtuais = sheet.getRange(1, 1, 1, HEADERS.length).getValues()[0];
+  var corrigidos = [];
+  
+  for (var i = 0; i < HEADERS.length; i++) {
+    if (String(headersAtuais[i]).trim().toLowerCase() !== HEADERS[i].toLowerCase()) {
+      sheet.getRange(1, i + 1).setValue(HEADERS[i]);
+      corrigidos.push(HEADERS[i]);
+    }
+  }
+  
+  colorirHeaders(sheet);
+  formatarAba(sheet);
+  
+  var totalLinhas = Math.max(0, sheet.getLastRow() - 1);
+  var msg = '✅ CNH Tracker — Estrutura verificada!\n\n';
+  msg += '📊 ' + totalLinhas + ' visitante(s) registrado(s)\n';
+  msg += '📋 ' + HEADERS.length + ' colunas configuradas\n';
+  
+  if (corrigidos.length > 0) {
+    msg += '\n🔧 Cabeçalhos corrigidos: ' + corrigidos.join(', ');
+  }
+  
+  msg += '\n\n── Zonas ──\n';
+  msg += '🔵 Identificação: visitor_id, gclid, gbraid, wbraid, fbclid, fbc, fbp\n';
+  msg += '⚫ Sessão: first_seen, hora, user_agent, screen, language\n';
+  msg += '🟢 Funil: hero → pergunta_01..04 → detran → conta → depoimentos → estudar_certo → sales_page → checkout_click → obrigado\n';
+  msg += '🟡 Status: last_event, last_updated';
+  
+  try {
+    SpreadsheetApp.getUi().alert(msg);
+  } catch (e) {}
+}
+
+
+// ── MENU ──────────────────────────────────────────────────────
+
+function onOpen() {
+  SpreadsheetApp.getUi()
+    .createMenu('⚡ CNH Tracker')
+    .addItem('✅ Verificar estrutura', 'verificarEstrutura')
+    .addToUi();
+}

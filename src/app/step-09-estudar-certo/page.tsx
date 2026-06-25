@@ -72,11 +72,11 @@ export default function Step09EstudarCerto() {
           className="w-full aspect-video mb-8 relative overflow-hidden"
         >
           <Image
-            src="/images/caos-youtube.jpeg"
-            alt="Mural caótico do YouTube"
+            src="/images/caos-youtube.webp"
+            alt="Mosaico confuso de thumbnails do YouTube representando a desinformação e dicas contraditórias que prejudicam candidatos à CNH"
             fill
-            className="object-cover scale-[1.02]"
-            priority
+            loading="lazy"
+            className="object-cover"
           />
         </motion.div>
 

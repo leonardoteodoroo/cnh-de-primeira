@@ -32,11 +32,11 @@ export default function Step07Conta() {
           className="w-full aspect-video relative overflow-hidden"
         >
           <Image
-            src="/images/step-07-conta.jpeg"
-            alt="Ilustração de uma calculadora somando taxas de reteste da prova teórica do Detran"
+            src="/images/step-07-conta.webp"
+            alt="Extrato detalhado de custos reais revelando o prejuízo financeiro com taxas de reagendamento e aulas extras após reprovação no exame prático"
             fill
+            loading="lazy"
             className="object-cover"
-            priority
           />
         </motion.div>
 

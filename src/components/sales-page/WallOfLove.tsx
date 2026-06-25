@@ -19,16 +19,16 @@ function ReviewCard({ review }: { review: Review }) {
   return (
     <article className="h-fit w-[290px] shrink-0 select-none rounded-2xl border border-white/70 bg-white/82 px-5 py-4 shadow-sm backdrop-blur md:w-[340px]">
       <p className="mb-3 text-[13px] leading-relaxed text-zinc-700">&quot;{review.text}&quot;</p>
-      <div className="flex items-center justify-between gap-3">
-        <div>
-          <strong className="block text-xs font-black uppercase tracking-tight text-zinc-950">
+      <div className="flex items-center justify-between gap-2">
+        <div className="min-w-0 flex-1">
+          <strong className="block truncate text-[11px] font-black uppercase tracking-tight text-zinc-950 sm:text-xs">
             {review.name}
           </strong>
-          <span className="text-[11px] text-zinc-500">
+          <span className="block truncate whitespace-nowrap text-[9px] tracking-tighter text-zinc-500 sm:text-[10.5px] md:text-[11px]">
             {review.age} anos · {review.location}
           </span>
         </div>
-        <span className="rounded-full bg-yellow-100 px-3 py-1 text-[10px] font-black uppercase tracking-tight text-yellow-800">
+        <span className="shrink-0 max-w-[45%] rounded-full bg-yellow-100 px-2.5 py-1 text-center text-[8.5px] font-black leading-tight tracking-tight uppercase text-yellow-800 sm:px-3 sm:text-[9px] md:text-[10px]">
           {review.highlight}
         </span>
       </div>
@@ -106,38 +106,35 @@ function TickerRow({
 
 export function WallOfLove() {
   return (
-    <section id="mural-do-amor" className="relative overflow-hidden bg-white py-16 md:py-24">
-      <ScrollReveal className="mx-auto max-w-6xl px-5 text-center md:px-8">
-        <span className="inline-flex rounded-full bg-rose-50 px-4 py-1.5 text-xs font-black uppercase tracking-[0.16em] text-rose-600">
+    <section id="mural-do-amor" className="relative overflow-hidden bg-white pt-24 pb-16 md:pt-32 md:pb-24">
+      {/* Fundo Global Edge-to-Edge */}
+      <div className="absolute inset-0 z-0 overflow-hidden">
+        <img
+          src="/images/wall-of-love-bg.jpg"
+          alt="Fundo do Mural do Amor"
+          loading="lazy"
+          decoding="async"
+          className="h-full w-full object-cover scale-[1.25] md:scale-[1.15]"
+        />
+      </div>
+
+      <ScrollReveal className="relative z-10 mx-auto max-w-6xl px-5 text-center md:px-8">
+        <span className="inline-flex rounded-full bg-rose-100/80 px-4 py-1.5 text-xs font-black uppercase tracking-[0.16em] text-rose-700 shadow-sm backdrop-blur-md">
           Mural do amor
         </span>
         <h2 className="mx-auto mt-5 max-w-3xl text-3xl font-black leading-tight tracking-tight text-zinc-950 md:text-5xl">
           Pessoas que estavam inseguras antes de chegar na prova.
         </h2>
-        <p className="mx-auto mt-5 max-w-2xl text-base leading-relaxed text-zinc-600 md:text-lg">
+        <p className="mx-auto mt-5 max-w-2xl text-base leading-relaxed text-zinc-700 md:text-lg">
           Veja como pessoas reais, com pouco tempo e muito nervosismo, conseguiram transformar a insegurança em clareza no dia da prova.
         </p>
       </ScrollReveal>
 
       <div className="relative mt-12 py-16">
-        <div className="absolute inset-0">
-          <img
-            src="/images/vendas-temp/ad-3.png"
-            alt="Fundo editorial do CNH de Primeira atrás dos depoimentos"
-            loading="lazy"
-            decoding="async"
-            className="h-full w-full object-cover opacity-20 mix-blend-multiply"
-          />
-          <div className="absolute inset-0 bg-white/58 backdrop-blur-[2px]" />
-        </div>
-
         <ScrollReveal delay={0.2} className="relative z-10 flex scale-[1.02] flex-col gap-4">
           <TickerRow reviews={tickerRows[0] as Review[]} direction="left" speed={1.5} />
           <TickerRow reviews={tickerRows[1] as Review[]} direction="right" speed={1.5} />
         </ScrollReveal>
-
-        <div className="pointer-events-none absolute inset-y-0 left-0 z-20 w-10 bg-gradient-to-r from-white to-transparent md:w-32" />
-        <div className="pointer-events-none absolute inset-y-0 right-0 z-20 w-10 bg-gradient-to-l from-white to-transparent md:w-32" />
       </div>
     </section>
   );

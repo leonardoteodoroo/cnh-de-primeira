@@ -13,7 +13,7 @@ export function FAQAndClose() {
               Antes de decidir
             </p>
             <h2 className="text-3xl font-black leading-tight tracking-tight md:text-5xl">
-              Respostas francas para não vender no grito.
+              As perguntas mais interessantes que me fazem
             </h2>
             <p className="mt-5 text-base leading-relaxed text-white/68">
               Transparência total. Sem promessas milagrosas, sem falsos atalhos e sem fingir que podemos substituir a etapa oficial do seu estado.
@@ -30,6 +30,13 @@ export function FAQAndClose() {
           </div>
         </div>
 
+        {/* ──────────────────────────────────────────────────────────
+            BLOCO "PRÓXIMO PASSO" — COMENTADO PARA DECISÃO FUTURA
+            O fechamento agora é feito pelo componente <ClosingCTA />
+            que fica logo após o <FAQAndClose /> no page.tsx.
+            Descomentar se quiser restaurar o bloco original.
+            ────────────────────────────────────────────────────────── */}
+        {/*
         <div className="mt-12 rounded-[28px] border border-yellow-300/30 bg-yellow-300 p-6 text-zinc-950 md:p-10">
           <div className="grid gap-8 md:grid-cols-[1fr_auto] md:items-center">
             <div>
@@ -61,6 +68,7 @@ export function FAQAndClose() {
             </Link>
           </div>
         </div>
+        */}
       </ScrollReveal>
     </section>
   );

@@ -10,12 +10,11 @@ const requiredFiles = [
   ["capa da página", "public/images/vendas-temp/ad-3.png"],
   ["foto do instrutor", "public/images/vendas-temp/instrutor-anderson.jpeg"],
   ["rota nova", "src/app/step-10-sales-page/page.tsx"],
-  ["ponte da rota antiga", "src/app/step-10-vendas/page.tsx"],
   ["link do step 09", "src/app/step-09-estudar-certo/page.tsx"],
   ["dados da sales page", "src/components/sales-page/data.ts"],
   ["hero da sales page", "src/components/sales-page/SalesHero.tsx"],
   ["mural do amor", "src/components/sales-page/WallOfLove.tsx"],
-  ["stepper de resultados", "src/components/sales-page/StudentResultsStepper.tsx"],
+  ["stepper de resultados", "src/components/sales-page/ApprovedStudentsStepper.tsx"],
 ];
 
 for (const [label, relativePath] of requiredFiles) {
@@ -24,15 +23,11 @@ for (const [label, relativePath] of requiredFiles) {
 
 const step09 = read("src/app/step-09-estudar-certo/page.tsx");
 assert.match(step09, /href="\/step-10-sales-page"/, "Step 09 deve apontar para /step-10-sales-page");
-assert.doesNotMatch(step09, /href="\/step-10-vendas"/, "Step 09 não deve apontar para /step-10-vendas");
-
-const legacy = read("src/app/step-10-vendas/page.tsx");
-assert.match(legacy, /\/step-10-sales-page/, "Rota antiga deve encaminhar para /step-10-sales-page");
 
 const salesPage = read("src/app/step-10-sales-page/page.tsx");
 assert.match(salesPage, /SalesHero/, "Página deve renderizar SalesHero");
 assert.match(salesPage, /WallOfLove/, "Página deve renderizar WallOfLove");
-assert.match(salesPage, /StudentResultsStepper/, "Página deve renderizar StudentResultsStepper");
+assert.match(salesPage, /ApprovedStudentsStepper/, "Página deve renderizar ApprovedStudentsStepper");
 assert.match(salesPage, /FAQAndClose/, "Página deve renderizar FAQAndClose");
 
 const data = read("src/components/sales-page/data.ts");

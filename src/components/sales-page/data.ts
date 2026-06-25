@@ -6,11 +6,16 @@ import {
   ClipboardCheck,
   Clock3,
   Gauge,
+  Gavel,
+  HeartPulse,
+  Leaf,
   Map,
   ShieldCheck,
+  ShieldAlert,
   Target,
   Trophy,
   Wallet,
+  Wrench,
 } from "lucide-react";
 
 export const salesCopy = {
@@ -22,14 +27,14 @@ export const salesCopy = {
   secondaryCta: "Ver o que recebo",
   diagnosticTitle: "Não é estudar mais. É estudar CERTO!",
   diagnosticBody:
-    "Você pode assistir aula, fazer simulado, salvar vídeo e ainda assim chegar na prova sem saber se está pronto. Não por falta de esforço. Por falta de sequência.",
+    "Você pode assistir aula, fazer vários simulados, e ainda assim chegar na prova com aquela sensação de dúvida se está realmente pronto. Isso acontece não por falta de esforço, mas por falta de aplicar esse esforço em um estudo de forma estruturada.",
   methodName: "PARE DE SE AFOGAR EM QUESTÕES",
   methodBody:
     "Um plano de preparação que começa pelo diagnóstico, mostra os pontos fracos e transformou erro em treino guiado antes do Detran.",
   instructorName: "Anderson Mageski",
-  instructorRole: "Professor, especialista em gestão, mobilidade e segurança no trânsito",
+  instructorRole: "Professor com especialização em Gestão, Mobilidade e Segurança no Trânsito · 10+ anos na área",
   instructorBody:
-    "Anderson organizou o treinamento para quem não quer decorar conteúdo solto. A ideia é simples: entender o que a prova cobra, treinar no formato certo e chegar com mais calma.",
+    "Professor por formação, com mais de uma década dedicada à educação e conscientização de motoristas. Anderson não criou mais um curso genérico — ele limpou o excesso, organizou o que os Detrans realmente cobram e montou simulados comentados para você entender a malícia de cada alternativa.",
   officialNote:
     "Este treinamento é preparação complementar. Ele não substitui etapas oficiais, exames, taxas estaduais ou regras do Detran.",
 };
@@ -104,10 +109,10 @@ export const methodSteps = [
 ];
 
 export const resultMetrics = [
-  { value: "32.000+", label: "alunos preparados" },
+  { value: "13h+", label: "de conteúdo direto" },
   { value: "4.7/5", label: "avaliação do instrutor" },
-  { value: "2", label: "cursos base do Anderson" },
-  { value: "30", label: "questões no formato da prova" },
+  { value: "16", label: "aulas comentadas" },
+  { value: "60+", label: "questões no formato da prova" },
 ];
 
 export const studentCards = [
@@ -216,4 +221,84 @@ export const finalBullets = [
   { icon: CheckCircle2, text: "Diagnóstico antes da venda" },
   { icon: Gauge, text: "Treino no formato da prova" },
   { icon: Trophy, text: "Plano simples para primeira tentativa" },
+];
+
+export const closingCta = {
+  eyebrow: "Última chamada",
+  headline: "Clareza custa menos que uma reprovação.",
+  price: "R$ 44,90",
+  priceNote: "Pagamento único · Sem mensalidade · Sem pegadinha",
+  cta: "Quero estudar com direção",
+  disclaimer:
+    "Este treinamento é preparação complementar. Ele não substitui etapas oficiais, exames, taxas estaduais ou regras do Detran.",
+};
+
+export const courseModules = [
+  {
+    icon: Gavel,
+    title: "Legislação de Trânsito",
+    hours: "5h26",
+    lessons: 7,
+    topics: [
+      "Sistema Nacional de Trânsito e CTB",
+      "Categorias de habilitação (A, B, C e D)",
+      "Sinalização vertical, horizontal e auxiliar",
+      "Infrações, crimes e penalidades",
+      "Normas de circulação e conduta",
+    ],
+  },
+  {
+    icon: ShieldAlert,
+    title: "Direção Defensiva",
+    hours: "2h57",
+    lessons: 4,
+    topics: [
+      "Direção preventiva vs. corretiva",
+      "Os 5 elementos: conhecimento, atenção, previsão, decisão e habilidade",
+      "Condições adversas (luz, tempo, via, veículo)",
+      "Tipos de colisão e como evitá-las",
+    ],
+  },
+  {
+    icon: HeartPulse,
+    title: "Primeiros Socorros",
+    hours: "1h58",
+    lessons: 2,
+    topics: [
+      "Sinalização de sinistro e acionamento do socorro",
+      "Protocolo ABCDE de avaliação primária",
+      "Controle de hemorragias e fraturas",
+    ],
+  },
+  {
+    icon: Wrench,
+    title: "Mecânica Básica",
+    hours: "1h45",
+    lessons: 1,
+    topics: [
+      "Motor, arrefecimento e lubrificação",
+      "Transmissão, freios e direção",
+      "Manutenção preventiva essencial",
+    ],
+  },
+  {
+    icon: Leaf,
+    title: "Meio Ambiente",
+    hours: "0h44",
+    lessons: 1,
+    topics: [
+      "Poluentes, gases e chuva ácida",
+      "Impactos da condução no meio ambiente urbano",
+    ],
+  },
+  {
+    icon: Brain,
+    title: "Cidadania e Convivência",
+    hours: "0h25",
+    lessons: 1,
+    topics: [
+      "Direitos e deveres no trânsito",
+      "Comunicação e convivência segura",
+    ],
+  },
 ];

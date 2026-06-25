@@ -9,11 +9,11 @@ export default function Step08Depoimentos() {
   return (
     <main className="min-h-dvh flex flex-col bg-[oklch(0.98_0.003_80)] text-[oklch(0.15_0.01_250)] selection:bg-[oklch(0.85_0.08_80)] overflow-x-hidden">
       <section className="flex-1 flex flex-col items-center px-0 pt-8 pb-8 max-w-full">
-        
+
         {/* Título Principal com SVG */}
         <div className="w-full mb-6 px-5 flex flex-col gap-4">
           <h1 className="text-[26px] font-extrabold tracking-tight text-[oklch(0.15_0.01_250)] leading-tight">
-            Milhares de pessoas passaram{" "}
+            Passaram{" "}
             <span className="text-[oklch(0.25_0.01_250)] relative inline-block">
               EXATAMENTE
               <svg
@@ -29,24 +29,28 @@ export default function Step08Depoimentos() {
                 />
               </svg>
             </span>{" "}
-            pelo mesmo aperto.
+            pelo mesmo aperto que você.
           </h1>
 
           {/* Overlapping Avatars */}
           <div className="flex items-center gap-3">
             <div className="flex -space-x-3">
-              {["R", "C", "T"].map((initial, i) => (
+              {[
+                "/images/depoimentos/depoimento_mariana_1782086167193.png",
+                "/images/depoimentos/depoimento_thiago_1782086187044.png",
+                "/images/depoimentos/depoimento_fernanda_1782086214755.png"
+              ].map((src, i) => (
                 <div
                   key={i}
                   aria-hidden="true"
-                  className="flex h-10 w-10 flex-shrink-0 items-center justify-center rounded-full border-2 border-white bg-[oklch(0.92_0.035_150)] text-[13px] font-bold text-[oklch(0.3_0.08_150)]"
+                  className="flex h-10 w-10 flex-shrink-0 items-center justify-center rounded-full border-2 border-[oklch(0.98_0.003_80)] bg-[oklch(0.92_0.035_150)] overflow-hidden"
                 >
-                  {initial}
+                  <img src={src} alt="Aluno Aprovado" className="h-full w-full object-cover" />
                 </div>
               ))}
             </div>
             <div className="text-[13px] text-[oklch(0.4_0.01_250)]">
-              <span className="text-[oklch(0.25_0.01_250)] font-bold">32.000+</span> Alunos Aprovados
+              <span className="text-[oklch(0.25_0.01_250)] font-bold">Alunos aprovados</span> pelo método
             </div>
           </div>
         </div>
@@ -73,7 +77,7 @@ export default function Step08Depoimentos() {
             </Link>
           </motion.div>
         </div>
-        
+
       </section>
     </main>
   );

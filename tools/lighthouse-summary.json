@@ -1,0 +1,74 @@
+{
+  "/step-01-hero-lab1/": {
+    "Performance": 72,
+    "Accessibility": 91,
+    "Best Practices": 96,
+    "SEO": 100
+  },
+  "/step-01-hero-lab2/": {
+    "Performance": 72,
+    "Accessibility": 91,
+    "Best Practices": 96,
+    "SEO": 100
+  },
+  "/step-02-pergunta-01/": {
+    "Performance": 69,
+    "Accessibility": 100,
+    "Best Practices": 100,
+    "SEO": 100
+  },
+  "/step-03-pergunta-02/": {
+    "Performance": 72,
+    "Accessibility": 100,
+    "Best Practices": 100,
+    "SEO": 100
+  },
+  "/step-04-pergunta-03/": {
+    "Performance": 75,
+    "Accessibility": 100,
+    "Best Practices": 100,
+    "SEO": 100
+  },
+  "/step-05-pergunta-04/": {
+    "Performance": 71,
+    "Accessibility": 100,
+    "Best Practices": 100,
+    "SEO": 100
+  },
+  "/step-06-detran/": {
+    "Performance": 74,
+    "Accessibility": 100,
+    "Best Practices": 100,
+    "SEO": 100
+  },
+  "/step-07-conta/": {
+    "Performance": 72,
+    "Accessibility": 91,
+    "Best Practices": 100,
+    "SEO": 100
+  },
+  "/step-08-depoimentos/": {
+    "Performance": 73,
+    "Accessibility": 88,
+    "Best Practices": 96,
+    "SEO": 100
+  },
+  "/step-09-estudar-certo/": {
+    "Performance": 68,
+    "Accessibility": 95,
+    "Best Practices": 100,
+    "SEO": 100
+  },
+  "/step-10-sales-page/": {
+    "Performance": 71,
+    "Accessibility": 96,
+    "Best Practices": 100,
+    "SEO": 100
+  },
+  "/obrigado/": {
+    "Performance": 72,
+    "Accessibility": 98,
+    "Best Practices": 100,
+    "SEO": 100
+  }
+}

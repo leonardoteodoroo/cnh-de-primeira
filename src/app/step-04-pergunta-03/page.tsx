@@ -214,7 +214,7 @@ export default function StepPergunta03() {
               </div>
 
               <Link href="/step-05-pergunta-04" className="w-full py-4 rounded-2xl bg-[oklch(0.25_0.01_250)] text-white text-sm font-semibold flex items-center justify-center gap-2 active:scale-[0.98] transition-transform duration-150 shadow-[0_4px_16px_oklch(0.15_0.01_250/20%)]">
-                Última pergunta
+                Próxima pergunta
                 <ArrowRight size={16} />
               </Link>
             </motion.div>

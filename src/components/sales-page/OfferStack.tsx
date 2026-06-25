@@ -10,24 +10,50 @@ export function OfferStack() {
             {salesCopy.methodName}
           </p>
           <h2 className="text-3xl font-black leading-tight tracking-tight text-zinc-950 md:text-5xl">
-            Um plano para transformar erro em revisão.
+            Chega de depender da sorte para ver o{" "}
+            <span className="relative inline-block text-yellow-600">
+              'APTO'
+              <svg
+                className="absolute w-full h-2.5 -bottom-2.5 left-0 text-yellow-500"
+                preserveAspectRatio="none"
+                viewBox="0 0 100 10"
+              >
+                <path
+                  d="M0 5 Q 50 10 100 5"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="3.5"
+                />
+              </svg>
+            </span>{" "}
+            no sistema.
           </h2>
           <p className="mt-5 text-base leading-relaxed text-zinc-600 md:text-xl">
             {salesCopy.methodBody}
           </p>
         </div>
 
-        <div className="mx-auto mt-10 grid max-w-4xl gap-3 md:grid-cols-3">
-          {methodSteps.map((step) => (
-            <div key={step.number} className="rounded-2xl bg-white p-5 shadow-sm ring-1 ring-zinc-200">
-              <div className="mb-4 flex h-9 w-9 items-center justify-center rounded-full bg-zinc-950 text-sm font-black text-white">
-                {step.number}
+        {/* 
+        <div className="mx-auto mt-10 grid grid-cols-2 md:grid-cols-3 max-w-4xl gap-2 md:gap-3">
+          {methodSteps.map((step) => {
+            const isThird = step.number === "3";
+            return (
+              <div
+                key={step.number}
+                className={`rounded-2xl bg-white p-5 shadow-sm ring-1 ring-zinc-200 text-center ${
+                  isThird ? "col-span-2 md:col-span-1" : "col-span-1"
+                }`}
+              >
+                <div className="mx-auto mb-4 flex h-9 w-9 items-center justify-center rounded-full bg-zinc-950 text-sm font-black text-white">
+                  {step.number}
+                </div>
+                <h3 className="font-black text-zinc-950">{step.title}</h3>
+                <p className="mt-2 text-sm leading-relaxed text-zinc-600">{step.text}</p>
               </div>
-              <h3 className="font-black text-zinc-950">{step.title}</h3>
-              <p className="mt-2 text-sm leading-relaxed text-zinc-600">{step.text}</p>
-            </div>
-          ))}
+            );
+          })}
         </div>
+        */}
 
         <div className="mt-12 grid gap-4 md:grid-cols-2 lg:grid-cols-3">
           {offerItems.map((item) => {
